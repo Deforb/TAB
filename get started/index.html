@@ -11,19 +11,17 @@
   <title>OpenTS - A Comprehensive and Fair Benchmark for Time Series Analytics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="subtitle" content="A Comprehensive and Fair Benchmark for Time Series Analytics">
-  <meta name="description" content="Get StartedYou can find our official code here: TAB github Table of Contents  Quickstart Contact  QuickstartInstallationFollow the steps below to configure the TAB environment. 1. Install GitSome mode">
+  <meta name="description" content="Get StartedYou can find our official code here: TAB github Table of Contents   Quickstart Contact  QuickstartInstallationFollow the steps below to configure the TAB environment. 1. Install GitSome mod">
 <meta property="og:type" content="website">
 <meta property="og:title" content="OpenTS - A Comprehensive and Fair Benchmark for Time Series Analytics">
 <meta property="og:url" content="https://deforb.github.io/TAB/get%20started/index.html">
 <meta property="og:site_name" content="OpenTS - A Comprehensive and Fair Benchmark for Time Series Analytics">
-<meta property="og:description" content="Get StartedYou can find our official code here: TAB github Table of Contents  Quickstart Contact  QuickstartInstallationFollow the steps below to configure the TAB environment. 1. Install GitSome mode">
+<meta property="og:description" content="Get StartedYou can find our official code here: TAB github Table of Contents   Quickstart Contact  QuickstartInstallationFollow the steps below to configure the TAB environment. 1. Install GitSome mod">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://deforb.github.io/TAB/figures/Pipeline.png">
-<meta property="article:published_time" content="2024-12-02T07:59:32.459Z">
-<meta property="article:modified_time" content="2024-12-02T07:59:32.459Z">
+<meta property="article:published_time" content="2024-12-02T08:01:55.152Z">
+<meta property="article:modified_time" content="2024-12-02T08:01:55.152Z">
 <meta property="article:author" content="DecisionIntelligence |">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://deforb.github.io/TAB/figures/Pipeline.png">
   
 
   <link href="/TAB/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
@@ -87,9 +85,9 @@
                 
                   <a href="/TAB/datasets/#Overview">Overview</a>
                 
-                  <a href="/TAB/datasets/#Univariate-time-series">Univariate time series</a>
-                
                   <a href="/TAB/datasets/#Multivariate-time-series">Multivariate time series</a>
+                
+                  <a href="/TAB/datasets/#Univariate-time-series">Univariate time series</a>
                 
               </div>
             </div>
@@ -259,7 +257,7 @@
     
     <div class="article-meta">
       <!--<a href="/TAB/get%20started/index.html" class="article-date">
-  <time datetime="2024-12-02T07:59:32.459Z" itemprop="datePublished">2024-12-02</time>
+  <time datetime="2024-12-02T08:01:55.152Z" itemprop="datePublished">2024-12-02</time>
 </a>-->
       <!-- 
 --><!-- by blair 160724 -->
@@ -275,6 +273,7 @@
 1. [Pipeline introduction](#Pipeline-introduction)
 1. [FAQ](#FAQ)
 1. [Citing TFB](#Citing-TFB)  -->
+
 <ol>
 <li><a href="#Quickstart">Quickstart</a></li>
 <li><a href="#Contact">Contact</a></li>
@@ -295,30 +294,21 @@
 <h3 id="Train-and-evaluate-model"><a href="#Train-and-evaluate-model" class="headerlink" title="Train and evaluate model"></a>Train and evaluate model</h3><p>We provide the experiment scripts for all benchmarks under the folder <code>./scripts/multivariate_detection</code>, and <code>./scripts/univariate_detection</code>. For example you can reproduce a experiment result as the following:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh ./scripts/multivariate_detection/detect_label/MSL_script/ModernTCN.sh</span><br></pre></td></tr></table></figure>
 
-<!-- ## Steps to develop your own method
+<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>If you have any questions or suggestions, feel free to contact:</p>
+<ul>
+<li>Xiangfei Qiu (<a href="mailto:&#x78;&#102;&#113;&#x69;&#x75;&#x40;&#115;&#116;&#x75;&#x2e;&#101;&#99;&#x6e;&#117;&#46;&#101;&#100;&#117;&#46;&#x63;&#110;">&#x78;&#102;&#113;&#x69;&#x75;&#x40;&#115;&#116;&#x75;&#x2e;&#101;&#99;&#x6e;&#117;&#46;&#101;&#100;&#117;&#46;&#x63;&#110;</a>)</li>
+</ul>
+<!-- ### Configure your Configuration File
 
-We provide tutorial about how to develop your own method, you can [click here](https://github.com/decisionintelligence/TFB/blob/master/docs/tutorials/steps_to_develop_your_own_method.md).
+  - Modify the corresponding config under the folder `./config/`.
 
-## Steps to evaluate on your own time series
+  - Modify the contents in  `./scripts/run_benchmark.py/`.
 
-We provide tutorial about how to evaluate on your own time series, you can [click here](https://github.com/decisionintelligence/TFB/blob/master/docs/tutorials/steps_to_evaluate_your_own_time_series.md).
+  - **We strongly recommend using the pre-defined configurations in `./config/`. Create your own  configuration file only when you have a clear understanding of the configuration items.**
 
-## Pipeline introduction
+### Run it
 
-The below figure provides a visual overview of TFB's pipeline.
-
-- The data layer is a repository of univariate and multivariate time series from diverse domains, structured according to their distinct characteristics, frequencies, and sequence lengths. The data is uniformly according to a standardized format.
-- The method layer supports embedding statistical learning, machine learning and deep learning methods. Additionally, TFB is designed to be compatible with any third-party TSF library, such as Darts, TSlib. Users can easily integrate forecasting methods implemented in third-party libraries into TFB by writing a simple Universal Interface, facilitating fair comparisons.
-- The evaluation layer offers support for a diverse range of evaluation strategies and metrics. And it also covers evaluation metrics found in other studies and enables the use of customized metrics for a more comprehensive assessment of method performance.
-- The reporting layer encompasses a logging system for tracking information, enabling the capture of experimental settings to enable traceability.
-
-<img src="../figures/Pipeline.png" alt="TFB Pipeline" style="zoom:50%;" /> -->
-
-<!-- ## Citing TFB
-
-If you find TFB helpful, please cite [our paper](https://www.vldb.org/pvldb/vol17/p2363-hu.pdf) (Bibtex below).
-
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">@article&#123;qiu2024tfb,</span><br><span class="line">  title   = &#123;TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods&#125;,</span><br><span class="line">  author  = &#123;Qiu, Xiangfei and Hu, Jilin and Zhou, Lekui and Wu, Xingjian and Du, Junyang and Zhang, Buang and Guo, Chenjuan and Zhou, Aoying and Jensen, Christian S and Sheng, Zhenli and Bin Yang&#125;,</span><br><span class="line">  journal = &#123;Proc. &#123;VLDB&#125; Endow.&#125;,</span><br><span class="line">  year    = &#123;2024&#125;,</span><br><span class="line">  pages   = &#123;2363 - 2377&#125;,</span><br><span class="line">  volume  = &#123;17&#125;</span><br><span class="line">&#125;</span><br><span class="line">``` --&gt;</span><br><span class="line"></span><br><span class="line"><span class="params">##</span> Contact</span><br><span class="line"></span><br><span class="line">If you have any questions or suggestions, feel free to contact:</span><br><span class="line"></span><br><span class="line">- Xiangfei Qiu (xfqiu@stu.ecnu.edu.cn)</span><br><span class="line"></span><br><span class="line">&lt;!-- <span class="params">###</span> Configure your Configuration File</span><br><span class="line"></span><br><span class="line">  - Modify the corresponding config under the folder `./config/`.</span><br><span class="line"></span><br><span class="line">  - Modify the contents in  `./scripts/run<span class="built_in">_</span>benchmark.py/`.</span><br><span class="line"></span><br><span class="line">  - **We strongly recommend using the pre-defined configurations in `./config/`. Create your own  configuration file only when you have a clear understanding of the configuration items.**</span><br><span class="line"></span><br><span class="line"><span class="params">###</span> Run it</span><br><span class="line"></span><br><span class="line">```shell</span><br><span class="line">python ./scripts/run<span class="built_in">_</span>benchmark.py --config-path &quot;rolling<span class="built_in">_</span>forecast<span class="built_in">_</span>config.json&quot; --data-name-list &quot;ILI.csv&quot; --strategy-args &#x27;&#123;&quot;horizon&quot;:24&#125;&#x27; --model-name &quot;time<span class="built_in">_</span>series<span class="built_in">_</span>library.DLinear&quot; --model-hyper-params &#x27;&#123;&quot;batch<span class="built_in">_</span>size&quot;: 16, &quot;d<span class="built_in">_</span>ff&quot;: 512, &quot;d<span class="built_in">_</span>model&quot;: 256, &quot;lr&quot;: 0.01, &quot;horizon&quot;: 24, &quot;seq<span class="built_in">_</span>len&quot;: 104&#125;&#x27; --adapter &quot;transformer<span class="built_in">_</span>adapter&quot;  --gpus 0  --num-workers 1  --timeout 60000  --save-path &quot;ILI/DLinear&quot;</span><br><span class="line">``` --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- <span class="params">###</span> Define you model or adapter class</span><br><span class="line"></span><br><span class="line">The user-implemented model or adapter class should implement the following functions in order to adapt to this benchmark.</span><br><span class="line"></span><br><span class="line">&quot;required<span class="built_in">_</span>hyper<span class="built_in">_</span>params&quot; function is optional，<span class="built_in">_</span><span class="built_in">_</span>repr<span class="built_in">_</span><span class="built_in">_</span> functions is necessary.</span><br><span class="line"></span><br><span class="line">**The function prototypes are as follows：**</span><br><span class="line"></span><br><span class="line">- required<span class="built_in">_</span>hyper<span class="built_in">_</span>params  function:</span><br><span class="line"></span><br><span class="line">  ```python</span><br><span class="line">  &quot;&quot;&quot;</span><br><span class="line">  Return the hyperparameters required by the model</span><br><span class="line">  This function is optional and static</span><br><span class="line"></span><br><span class="line">  :return: A dictionary that represents the hyperparameters required by the model</span><br><span class="line">  :rtype: dict</span><br><span class="line">  &quot;&quot;&quot;</span><br><span class="line">  <span class="params">#</span> For example</span><br><span class="line">  @staticmethod</span><br><span class="line">  def required<span class="built_in">_</span>hyper<span class="built_in">_</span>params() -&gt; dict:</span><br><span class="line">      &quot;&quot;&quot;</span><br><span class="line">      An empty dictionary indicating that model does not require</span><br><span class="line">      additional hyperparameters.</span><br><span class="line">      &quot;&quot;&quot;</span><br><span class="line">      return &#123;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">python ./scripts/run_benchmark.py --config-path &quot;rolling_forecast_config.json&quot; --data-name-list &quot;ILI.csv&quot; --strategy-args &#x27;&#123;&quot;horizon&quot;:24&#125;&#x27; --model-name &quot;time_series_library.DLinear&quot; --model-hyper-params &#x27;&#123;&quot;batch_size&quot;: 16, &quot;d_ff&quot;: 512, &quot;d_model&quot;: 256, &quot;lr&quot;: 0.01, &quot;horizon&quot;: 24, &quot;seq_len&quot;: 104&#125;&#x27; --adapter &quot;transformer_adapter&quot;  --gpus 0  --num-workers 1  --timeout 60000  --save-path &quot;ILI/DLinear&quot;</span><br><span class="line">``` --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- ### Define you model or adapter class</span><br><span class="line"></span><br><span class="line">The user-implemented model or adapter class should implement the following functions in order to adapt to this benchmark.</span><br><span class="line"></span><br><span class="line">&quot;required_hyper_params&quot; function is optional，__repr__ functions is necessary.</span><br><span class="line"></span><br><span class="line">**The function prototypes are as follows：**</span><br><span class="line"></span><br><span class="line">- required_hyper_params  function:</span><br><span class="line"></span><br><span class="line">  ```python</span><br><span class="line">  &quot;&quot;&quot;</span><br><span class="line">  Return the hyperparameters required by the model</span><br><span class="line">  This function is optional and static</span><br><span class="line"></span><br><span class="line">  :return: A dictionary that represents the hyperparameters required by the model</span><br><span class="line">  :rtype: dict</span><br><span class="line">  &quot;&quot;&quot;</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">For example</span></span><br><span class="line">  @staticmethod</span><br><span class="line">  def required_hyper_params() -&gt; dict:</span><br><span class="line">      &quot;&quot;&quot;</span><br><span class="line">      An empty dictionary indicating that model does not require</span><br><span class="line">      additional hyperparameters.</span><br><span class="line">      &quot;&quot;&quot;</span><br><span class="line">      return &#123;&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>forecast_fit  function training model</p>
