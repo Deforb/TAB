@@ -1,21 +1,16 @@
 # Datasets
 
-
-
 ## Table of Contents
 
 1. [Overview](#Overview)
 
-1. [Univariate time series](#Univariate-time-series)
-
 1. [Multivariate time series](#Multivariate-time-series)
+
+1. [Univariate time series](#Univariate-time-series)
 
 <!-- 1. [Dataset comprehensiveness](#Dataset-comprehensiveness) -->
 
-   
-
 ## Overview
-
 
 <style>       
 .container {
@@ -66,144 +61,227 @@
     }
 </style>
 <div class="content">
-            The Time series Forecasting Benchmark (TFB) aims to provide a wide variety of time series datasets that cover diverse charactistics, rich domains, multiple tasks, and varying lengths and dimensions.
-        </div>
-<div class="container">
-    <div class="text-section">
-        <!-- <div class="header">OGB Dataset Overview</div> -->
-        <div class="content"> 
-            <div class="section-title">Diverse charactistics: </div>
-           TFB covers diverse time series data characteristics, including seasonality, trend, stationarity, transition, shifting, and correlation.
-        </div>
-        <div class="content">
-          <div class="section-title">Rich domains: </div>
-            TFB datasets come from ten different domains, including traffic, electricity, energy, the environment, nature, economic, stock markets, banking, health, and the web.
-      </div>
-    <div class="content">
-        <div class="section-title">Multiple tasks: </div>
-        We cover two fundamental time series forecasting tasks: <a href="#Univariate-time-series" class="link">univariate forecating</a> and <a href="#Multivariate-time-series" class="link">multivariate forecating</a>.
-  </div>
-    </div>
-    <div class="image-section">
-        <img src="../figures/Main-datasets-leaderboard.drawio.png">
-    </div>
-
+  We equip TAB with a robust collection of 18 multivariate and 1,671 univariate datasets, sourced
+  from various community literature, providing researchers with a solid reference foundation.
 </div>
+<!-- <div class="container">
+  <div class="text-section">
+    <div class="content">
+      <div class="section-title">Diverse charactistics:</div>
+      TFB covers diverse time series data characteristics, including seasonality, trend,
+      stationarity, transition, shifting, and correlation.
+    </div>
+    <div class="content">
+      <div class="section-title">Rich domains:</div>
+      TFB datasets come from ten different domains, including traffic, electricity, energy, the
+      environment, nature, economic, stock markets, banking, health, and the web.
+    </div>
+    <div class="content">
+      <div class="section-title">Multiple tasks:</div>
+      We cover two fundamental time series forecasting tasks:
+      <a href="#Univariate-time-series" class="link">univariate forecating</a> and
+      <a href="#Multivariate-time-series" class="link">multivariate forecating</a>.
+    </div>
+  </div>
+  <div class="image-section">
+    <img src="../figures/Main-datasets-leaderboard.drawio.png" />
+  </div>
+</div> -->
 
+## Multivariate time series
 
-## Univariate time series
-
-The univariate dataset includes 8,068 time series which are carefully curated from 16 open-source datasets from multiple domains. Table 1 categorizes the univariate dataset by sampling frequency; and for each frequency category, it reports the number of time series with different charactistics, including seasonality, trend, shifting, transition, stationarity, and the average lengths.  
+Table 2 lists statistics of the 18 public multivariate time series datasets from 10 domains. We observe that the range of feature dimensions varies from 2 to 72 and the sequence length changes from 5,040 to 1,416,825. Most datasets contain only one multivariate time series except Daphnet, SKAB, Exathlon, ASD, TODS, which have 7, 34, 3, 12 and 12 multivariate time series, respectively. In the experiment, we report the average evaluation metrics on all time series for each dataset.
 
 <div style="display: flex;justify-content: center; /* 水平居中 */padding: 0;">
 <table class="my-table" style="width: 90%;">
   <thead>
     <tr>
-      <th>Frequency</th>
-      <th>#Series</th>
-      <th>Seasonality</th>
-      <th>Trend</th>
-      <th>Shifting</th>
-      <th>Transition</th>
-      <th>Stationarity</th>
-      <th>Average Lens</th>
+      <th>Dataset</th>
+      <th>Domain</th>
+      <th>Dim</th>
+      <th>Avg. AR (%)</th>
+      <th>Avg Total Length</th>
+      <th>Avg Test Length</th>
+      <th>Series Count</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Yearly</td>
-      <td>1,500</td>
-      <td>611</td>
-      <td>1,086</td>
-      <td>978</td>
-      <td>633</td>
-      <td>354</td>
-      <td>32</td>
+      <td>MSL [29]</td>
+      <td>Spacecraft</td>
+      <td>55</td>
+      <td>5.88</td>
+      <td>132,046</td>
+      <td>73,729</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>Quarterly</td>
-      <td>1,514</td>
-      <td>486</td>
-      <td>933</td>
-      <td>889</td>
-      <td>894</td>
-      <td>471</td>
-      <td>97</td>
+      <td>PSM [1]</td>
+      <td>Server Machine</td>
+      <td>25</td>
+      <td>11.07</td>
+      <td>220.322</td>
+      <td>87,841</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>Monthly</td>
-      <td>1,674</td>
-      <td>883</td>
-      <td>884</td>
-      <td>778</td>
-      <td>1,212</td>
-      <td>667</td>
-      <td>259</td>
+      <td>SMAP [29]</td>
+      <td>1,Spacecraft</td>
+      <td>25</td>
+      <td>9.72</td>
+      <td>562,800</td>
+      <td>427,617</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>Weekly</td>
-      <td>805</td>
-      <td>253</td>
-      <td>330</td>
-      <td>445</td>
-      <td>407</td>
-      <td>372</td>
-      <td>536</td>
+      <td>SMD [72]</td>
+      <td>Server Machine</td>
+      <td>38</td>
+      <td>2.08</td>
+      <td>1,416,825</td>
+      <td>708,420</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>Daily</td>
-      <td>1,484</td>
-      <td>374</td>
-      <td>502</td>
-      <td>487</td>
-      <td>1,176</td>
-      <td>714</td>
-      <td>4,951</td>
+      <td>SWAT [51]</td>
+      <td>Water treatment</td>
+      <td>51</td>
+      <td>5.78</td>
+      <td>944,919</td>
+      <td>449,919</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>Hourly</td>
-      <td>706</td>
-      <td>435</td>
-      <td>276</td>
-      <td>284</td>
-      <td>680</td>
-      <td>472</td>
-      <td>5,109</td>
+      <td>SWAN [4]</td>
+      <td>Space Weather</td>
+      <td>38</td>
+      <td>23.8</td>
+      <td>120,000</td>
+      <td>60,000</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td>Other</td>
-      <td>385</td>
-      <td>75</td>
-      <td>248</td>
-      <td>236</td>
-      <td>195</td>
-      <td>124</td>
-      <td>1,678</td>
+      <td>Creditcard [12]</td>
+      <td>Finance</td>
+      <td>29</td>
+      <td>0.17</td>
+      <td>284,807</td>
+      <td>142,404</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td><i>Total</i></td>
-      <td><i>8,068</i></td>
-      <td><i>3,117</i></td>
-      <td><i>4,259</i></td>
-      <td><i>4,097</i></td>
-      <td><i>5,197</i></td>
-      <td><i>3,174</i></td>
-      <td><i>1,569</i></td>
+      <td>GECCO [53]</td>
+      <td>Water treatment</td>
+      <td>9</td>
+      <td>1.25</td>
+      <td>138,521</td>
+      <td>69,261</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CICIDS [68]</td>
+      <td>Web</td>
+      <td>72</td>
+      <td>1.28</td>
+      <td>170,231</td>
+      <td>85,116</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CalIt2 [5]</td>
+      <td>Visitors flowrate</td>
+      <td>2</td>
+      <td>4.09</td>
+      <td>5,040</td>
+      <td>2,520</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Genesis [76]</td>
+      <td>Machinery</td>
+      <td>18</td>
+      <td>0.31</td>
+      <td>16,220</td>
+      <td>12,616</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Daphnet [5]</td>
+      <td>Movement</td>
+      <td>9</td>
+      <td>5.75</td>
+      <td>87,724</td>
+      <td>58,483</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>SKAB [32]</td>
+      <td>Machinery</td>
+      <td>8</td>
+      <td>3.65</td>
+      <td>10,505</td>
+      <td>1,100</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>NYC [11]</td>
+      <td>Transport</td>
+      <td>3</td>
+      <td>0.57</td>
+      <td>17,520</td>
+      <td>4,416</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Exathlon [31]</td>
+      <td>Application Server</td>
+      <td>multi</td>
+      <td>8.71</td>
+      <td>131,610</td>
+      <td>72,974</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ASD [41]</td>
+      <td>Application Server</td>
+      <td>19</td>
+      <td>1.55</td>
+      <td>12,848</td>
+      <td>4,320</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>PUMP [18]</td>
+      <td>Water treatment</td>
+      <td>44</td>
+      <td>6.54</td>
+      <td>220,302</td>
+      <td>143,401</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>TODS [37]</td>
+      <td>Synthetic</td>
+      <td>5</td>
+      <td>6.35</td>
+      <td>20,000</td>
+      <td>5,00</td>
+      <td>12</td>
     </tr>
   </tbody>
 </table>
 </div>
 
-
-
-
-
 <!-- ![](../figures/single-data.png) -->
 
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">Table 1: Statistics of univariate datasets.</center>
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">Table 2: Statistics of multivariate datasets
+<p style="font-size:13px">(AR: anomaly ratio, multi means the dimensionality of the dataset is different for each series).</p>
+</center>
 
-## Multivariate time series
-The multivariate datasets include 25 multivariate time series from 10 domains. The sampling frequencies vary from every 5 minutes to 1 month, the range of feature dimensions varies from 5 to 2,000, and the time series length varies from 728 to 57,600. This substantial diversity of the multivariate datasets enables comprehensive benchmarking of different forecasting methods. To ensure fair comparisons, we choose a fixed data split ratio for each dataset chronologically, e.g., 7:1:2 or 6:2:2, for training, validation and testing. 
+## Univariate time series
+
+Table 3 summarizes statistical information of the univariate datasets. The first seven datasets (split by horizontal line) are the most commonly used and are proposed for univariate time series originally. The remaining nine datasets are transformed from multivariate time series, which is consistent with TAB-UAD [58 ]. Specifically, for multivariate time series, we treat it as multiple univariate time series. We then run the AD method on each univariate time series separately and retain those univariate series where at least one method achieves AUC-ROC > 0.85. To ensure data quality, we proceed to filter according to the following two rules: 1) have no anomaly; 2) have anomaly ratio > 10% [66 ], resulting in a total of 1,671 time series. Although NAB, Yahoo are blamed to be too trivial, we still believe they are valuable since a good method should perform well on both challenging and trivial datasets.
+
 <style>
   /* 基本表格样式 */
   table.my-table {
@@ -251,7 +329,7 @@ The multivariate datasets include 25 multivariate time series from 10 domains. T
     border-collapse: collapse;
     font-family: Arial, sans-serif;
     border: none; /* 去除表格边框 */
-    margin:0
+    margin: 0;
   }
 
   /* 表头样式 */
@@ -274,7 +352,6 @@ The multivariate datasets include 25 multivariate time series from 10 domains. T
     background-color: #f2f2f2; /* 奇数行背景色（浅灰色） */
   }
 
-
   /* 单元格样式 */
   table.my-table1 td {
     padding: 10px; /* 调整单元格内边距 */
@@ -282,256 +359,162 @@ The multivariate datasets include 25 multivariate time series from 10 domains. T
     border: none; /* 去除单元格边框 */
     white-space: nowrap; /* 防止文本换行 */
   }
-  table.my-table1 tr td:nth-child(7),table.my-table1 tr th:nth-child(7)   {
-  /* max-width: 0px; 设置第4行单元格最大宽度 */
-  text-align: left;
-}
 
-.table-container {
-  width: 100%; /* Adjust width as needed */
-  /* max-width: 100%; Ensure it doesn't exceed the container width */
-  /* Adjust height as needed */
-  overflow-x: auto; /* Enable horizontal scroll */
-  margin:auto;
-  overflow-y: hidden; /* Enable vertical scroll */
-  display: flex;justify-content: LEFT;
-}
+  table.my-table1 tr:nth-child(7) td {
+    border-bottom: 2px solid grey; /* 第七行底部边框 */
+  }
 
-
+  .table-container {
+    width: 100%; /* Adjust width as needed */
+    /* max-width: 100%; Ensure it doesn't exceed the container width */
+    /* Adjust height as needed */
+    overflow-x: auto; /* Enable horizontal scroll */
+    margin: auto;
+    overflow-y: hidden; /* Enable vertical scroll */
+    display: flex;
+    justify-content: LEFT;
+  }
 </style>
 
 <!-- ![](../figures/multi-datasets.png) -->
 <div style="width:100%" class="table-container">
-<table class="my-table1" style="">
+<table class="my-table1">
   <thead>
     <tr>
       <th>Dataset</th>
       <th>Domain</th>
-      <th>Frequency</th>
-      <th>Lengths</th>
-      <th>Dim</th>
-      <th>Split</th>
-      <th>Description</th>
+      <th>Avg. AR(%)</th>
+      <th>Avg Total Length</th>
+      <th>Avg Test Length</th>
+      <th>Series Count</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://arxiv.org/abs/1707.01926">METR-LA</a></td>
-      <td>Traffic</td>
-      <td>5 mins</td>
-      <td>34,272</td>
-      <td>207</td>
-      <td>7:1:2</td>
-      <td title='>Traffic speed dataset collected from loopdetectors in the LA County road network'>Traffic speed dataset collected from loopdetectors in the LA County road network</td>
+      <td>GAIA</td>
+      <td>AIOps</td>
+      <td>1.22</td>
+      <td>9,574.4</td>
+      <td>8,617.2</td>
+      <td>193</td>
     </tr>
     <tr>
-      <td><a href="https://arxiv.org/abs/1707.01926">PEMS-BAY</a></td>
-      <td>Traffic</td>
-      <td>5 mins</td>
-      <td>52,116</td>
-      <td>325</td>
-      <td>7:1:2</td>
-      <td title='Traffic speed dataset collected from the CalTrans PeMS'>Traffic speed dataset collected from the CalTrans PeMS</td>
+      <td>ECG [52]</td>
+      <td>Health</td>
+      <td>4.89</td>
+      <td>229,990.9</td>
+      <td>206,991.8</td>
+      <td>22</td>
     </tr>
     <tr>
-      <td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/5438">PEMS04</a></td>
-      <td>Traffic</td>
-      <td>5 mins</td>
-      <td>16,992</td>
-      <td>307</td>
-      <td>6:2:2</td>
-      <td title='Traffic flow time series collected from the CalTrans PeMS'>Traffic flow time series collected from the CalTrans PeMS</td>
+      <td>IOPS [63]</td>
+      <td>Web</td>
+      <td>2.15</td>
+      <td>101,430.7</td>
+      <td>91,288.2</td>
+      <td>11</td>
     </tr>
     <tr>
-      <td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/5438">PEMS08</a></td>
-      <td>Traffic</td>
-      <td>5 mins</td>
-      <td>17,856</td>
-      <td>170</td>
-      <td>6:2:2</td>
-      <td title='Traffic flow time series collected from the CalTrans PeMS'>Traffic flow time series collected from the CalTrans PeMS</td>
+      <td>KDD21 [33]</td>
+      <td>Multiple</td>
+      <td>0.58</td>
+      <td>65,803.1</td>
+      <td>47,222.4</td>
+      <td>247</td>
     </tr>
     <tr>
-      <td><a href="https://proceedings.neurips.cc/paper/2021/hash/bcc0d400288793e8bdcd7c19a8ac0c2b-Abstract.html">Traffic</a></td>
-      <td>Traffic</td>
-      <td>1 hour</td>
-      <td>17,544</td>
-      <td>862</td>
-      <td>7:1:2</td>
-      <td title='Road occupancy rates measured by 862 sensors on San Francisco Bay area freeways'>Road occupancy rates measured by 862 sensors on San Francisco Bay area freeways</td>
+      <td>MGAB [74]</td>
+      <td>Mackey-Glass</td>
+      <td>0.20</td>
+      <td>100,000.0</td>
+      <td>90,000.0</td>
+      <td>6</td>
     </tr>
     <tr>
-      <td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/17325">ETTh1</a></td>
-      <td>Electricity</td>
-      <td>1 hour</td>
-      <td>14,400</td>
-      <td>7</td>
-      <td>6:2:2</td>
-      <td title='Power transformer 1, comprising seven indicators such as oil temperature and useful load'>Power transformer 1, comprising seven indicators such as oil temperature and useful load</td>
+      <td>NAB [2]</td>
+      <td>Multiple</td>
+      <td>9.82</td>
+      <td>6,767.9</td>
+      <td>6,091.4</td>
+      <td>49</td>
     </tr>
     <tr>
-      <td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/17325">ETTh2</a></td>
-      <td>Electricity</td>
-      <td>1 hour</td>
-      <td>14,400</td>
-      <td>7</td>
-      <td>6:2:2</td>
-      <td title='Power transformer 2, comprising seven indicators such as oil temperature and useful load'>Power transformer 2, comprising seven indicators such as oil temperature and useful load</td>
+      <td>YAHOO [38]</td>
+      <td>Multiple</td>
+      <td>0.62</td>
+      <td>1,563.1</td>
+      <td>1,094.3</td>
+      <td>362</td>
     </tr>
     <tr>
-      <td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/17325">ETTm1</a></td>
-      <td>Electricity</td>
-      <td>15 mins</td>
-      <td>57,600</td>
-      <td>7</td>
-      <td>6:2:2</td>
-      <td title='Power transformer 1, comprising seven indicators such as oil temperature and useful load'>Power transformer 1, comprising seven indicators such as oil temperature and useful load</td>
+      <td>NASA-MSL [7]</td>
+      <td>Spacecraft</td>
+      <td>4.00</td>
+      <td>5,008.7</td>
+      <td>2,818.5</td>
+      <td>23</td>
     </tr>
     <tr>
-      <td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/17325">ETTm2</a></td>
-      <td>Electricity</td>
-      <td>15 mins</td>
-      <td>57,600</td>
-      <td>7</td>
-      <td>6:2:2</td>
-      <td title='Power transformer 2, comprising seven indicators such as oil temperature and useful load'>Power transformer 2, comprising seven indicators such as oil temperature and useful load</td>
+      <td>NASA-SMAP [7]</td>
+      <td>Spacecraft</td>
+      <td>2.16</td>
+      <td>10,536.8</td>
+      <td>7,932.9</td>
+      <td>36</td>
     </tr>
     <tr>
-      <td><a href="https://ergodicity.net/2013/07/">Electricity</a></td>
-      <td>Electricity</td>
-      <td>1 hour</td>
-      <td>26,304</td>
-      <td>321</td>
-      <td>7:1:2</td>
-      <td title='Electricity records the electricity consumption in kWh every 1 hour from 2012 to 2014'>Electricity records the electricity consumption in kWh every 1 hour from 2012 to 2014</td>
-    </tr>
-    <tr>
-      <td><a href="https://dl.acm.org/doi/abs/10.1145/3209978.3210006">Solar</a></td>
-      <td>Energy</td>
-      <td>10 mins</td>
-      <td>52,560</td>
-      <td>137</td>
-      <td>6:2:2</td>
-       <td title='Solar production records collected from 137 PV plants in Alabama'>Solar production records collected from 137 PV plants in Alabama</td>
-    </tr>
-    <tr>
-      <td><a href="https://dl.acm.org/doi/abs/10.1145/3209978.3210006">Wind</a></td>
-      <td>Energy</td>
-      <td>15 mins</td>
-      <td>48,673</td>
-      <td>7</td>
-      <td>7:1:2</td>
-      <td title='Wind power records from 2020-2021 at 15-minute intervals'>Wind power records from 2020-2021 at 15-minute intervals</td>
-    </tr>
-    <tr>
-      <td><a href="https://proceedings.neurips.cc/paper/2021/hash/bcc0d400288793e8bdcd7c19a8ac0c2b-Abstract.html">Weather</a></td>
-      <td>Environment</td>
-      <td>10 mins</td>
-      <td>52,696</td>
+      <td>Daphnet [6]</td>
+      <td>Movement</td>
+      <td>3.38</td>
+      <td>12,342.9</td>
+      <td>11,108.6</td>
       <td>21</td>
-      <td>7:1:2</td>
-      <td title='Recorded every for the whole year 2020, which contains 21 meteorological indicators'>Recorded every for the whole year 2020, which contains 21 meteorological indicators</td>
     </tr>
     <tr>
-      <td><a href="https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2017.0457">AQShunyi</a></td>
-      <td>Environment</td>
-      <td>1 hour</td>
-      <td>35,064</td>
-      <td>11</td>
-      <td>6:2:2</td>
-      <td title='Air quality datasets from a measurement station, over a period of 4 years'>Air quality datasets from a measurement station, over a period of 4 years</td>
+      <td>GHL [19]</td>
+      <td>Machinery</td>
+      <td>0.25</td>
+      <td>200,001.0</td>
+      <td>180,001.0</td>
+      <td>2</td>
     </tr>
     <tr>
-      <td><a href="https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2017.0457">AQWan</a></td>
-      <td>Environment</td>
-      <td>1 hour</td>
-      <td>35,064</td>
-      <td>11</td>
-      <td>6:2:2</td>
-      <td title='Air quality datasets from a measurement station, over a period of 4 years'>Air quality datasets from a measurement station, over a period of 4 years</td>
+      <td>Genesis [76]</td>
+      <td>Machinery</td>
+      <td>0.31</td>
+      <td>16,220.0</td>
+      <td>14,598.0</td>
+      <td>1</td>
     </tr>
     <tr>
-      <td><a href="https://academic.oup.com/treephys/article-abstract/36/12/1449/2571314">ZafNoo</a></td>
-      <td>Nature</td>
-      <td>30 mins</td>
-      <td>19,225</td>
-      <td>11</td>
-      <td>7:1:2</td>
-      <td title='From the Sapflux data project includes sap flow measurements and nvironmental variables'>From the Sapflux data project includes sap flow measurements and nvironmental variables</td>
+      <td>OPP [64]</td>
+      <td>Movement</td>
+      <td>4.11</td>
+      <td>31,328.5</td>
+      <td>28,196.1</td>
+      <td>465</td>
     </tr>
     <tr>
-      <td><a href="https://academic.oup.com/treephys/article-abstract/36/12/1449/2571314">CzeLan</a></td>
-      <td>Nature</td>
-      <td>30 mins</td>
-      <td>19,934</td>
-      <td>11</td>
-      <td>7:1:2</td>
-      <td title='From the Sapflux data project includes sap flow measurements and nvironmental variables'>From the Sapflux data project includes sap flow measurements and nvironmental variables</td>
+      <td>SMD [72]</td>
+      <td>Server Machine</td>
+      <td>2.63</td>
+      <td>25,810.4</td>
+      <td>23,229.9</td>
+      <td>184</td>
     </tr>
     <tr>
-      <td><a href="https://www.tandfonline.com/doi/abs/10.1080/07350015.2015.1086655">FRED-MD</a></td>
-      <td>Economic</td>
-      <td>1 month</td>
-      <td>728</td>
-      <td>107</td>
-      <td>7:1:2</td>
-      <td title='Time series showing a set of macroeconomic indicators from the Federal Reserve Bank'>Time series showing a set of macroeconomic indicators from the Federal Reserve Bank</td>
-    </tr>
-    <tr>
-      <td><a href="https://dl.acm.org/doi/abs/10.1145/3209978.3210006">Exchange</a></td>
-      <td>Economic</td>
-      <td>1 day</td>
-      <td>7,588</td>
-      <td>8</td>
-      <td>7:1:2</td>
-      <td title='ExchangeRate collects the daily exchange rates of eight countries'>ExchangeRate collects the daily exchange rates of eight countries</td>
-    </tr>
-    <tr>
-      <td><a href="https://dl.acm.org/doi/abs/10.1145/3309547">NASDAQ</a></td>
-      <td>Stock</td>
-      <td>1 day</td>
-      <td>1,244</td>
-      <td>5</td>
-      <td>7:1:2</td>
-      <td title='Records opening price, closing price, trading volume, lowest price, and highest price'>Records opening price, closing price, trading volume, lowest price, and highest price</td>
-    </tr>
-    <tr>
-      <td><a href="https://dl.acm.org/doi/abs/10.1145/3309547">NYSE</a></td>
-      <td>Stock</td>
-      <td>1 day</td>
-      <td>1,243</td>
-      <td>5</td>
-      <td>7:1:2</td>
-      <td title='Records opening price, closing price, trading volume, lowest price, and highest price'>Records opening price, closing price, trading volume, lowest price, and highest price</td>
-    </tr>
-    <tr>
-      <td><a href="https://www.sciencedirect.com/science/article/pii/S0957417412000528">NN5</a></td>
-      <td>Banking</td>
-      <td>1 day</td>
-      <td>791</td>
-      <td>111</td>
-      <td>7:1:2</td>
-      <td title='NN5 is from banking, records the daily cash withdrawals from ATMs in UK'>NN5 is from banking, records the daily cash withdrawals from ATMs in UK</td>
-    </tr>
-    <tr>
-      <td><a href="https://proceedings.neurips.cc/paper/2021/hash/bcc0d400288793e8bdcd7c19a8ac0c2b-Abstract.html">ILI</a></td>
+      <td>SVDB [24]</td>
       <td>Health</td>
-      <td>1 week</td>
-      <td>966</td>
-      <td>7</td>
-      <td>7:1:2</td>
-      <td title='Recorded indicators of patients data from Centers for Disease Control and Prevention'>Recorded indicators of patients data from Centers for Disease Control and Prevention</td>
+      <td>4.87</td>
+      <td>230,400.0</td>
+      <td>207,360.0</td>
+      <td>52</td>
     </tr>
-    <tr>
-      <td><a href="https://ojs.aaai.org/index.php/AAAI/article/view/16616">Covid-19</a></td>
-      <td>Health</td>
-      <td>1 day</td>
-      <td>1,392</td>
-      <td>948</td>
-      <td>7:1:2</td>
-      <td title="Provide opportunities for researchers to investigate the dynamics of COVID-19">Provide opportunities for researchers to investigate the dynamics of COVID-19</td>
-    </tr>
-    <tr>
+
+  </tbody>
+</table>
+</div>
+    <!-- <tr>
       <td><a href="https://proceedings.mlr.press/v89/gasthaus19a.html">Wike2000</a></td>
       <td>Web</td>
       <td>1 day</td>
@@ -539,11 +522,7 @@ The multivariate datasets include 25 multivariate time series from 10 domains. T
       <td>2,000</td>
       <td>7:1:2</td>
       <td  title="Wike2000 is daily page views of 2000 Wikipedia pages">Wike2000 is daily page views of 2000 Wikipedia pages</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">Table 2: Statistics of multivariate datasets.</center>
-
+    </tr> -->
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">Table 3: Statistics of univariate datasets
+<span style="font-size:13px">(AR: anomaly ratio).</span>
+</center>
