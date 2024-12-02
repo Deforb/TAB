@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: OpenTS - A Comprehensive and Fair Benchmark for Time Series Analytics
+subtitle: A Comprehensive and Fair Benchmark for Time Series Analytics
+description: A Comprehensive and Fair Benchmark for Time Series Analytics
 keywords:
 author: DecisionIntelligence |
 language: en
@@ -13,7 +13,9 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://decisionintelligence.github.io/TFB_leaderboard.github.io/
+# url: https://decisionintelligence.github.io/OpenTS/
+url: https://Deforb.github.io/TAB/
+root: /TAB/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -29,7 +31,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-
+favicon: /figures/logo10.png
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -102,6 +104,21 @@ theme: blairos
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:decisionintelligence/TFB_leaderboard.github.io.git
+  # repo: git@github.com:decisionintelligence/OpenTS.git
+  repo: git@github.com:Deforb/TAB.git
   branch: main
-  
+  # type: indexnow_url_submitter
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+
+# 本文作者：zkz098@望月阁
+# 本文链接：https://www.kaitaku.xyz/webbuild/hexo/indexnow/
+# 版权声明：本站所有文章除特别声明外，均采用 (CC)BY-NC-SA 许可协议。转载请注明出处！
+
+hexo_indexnow:
+
+  count: latest # 数字或者 "latest"(=1)
+  txt_name: b613253d0eb946a89134fb4e60021e88.txt # 链接文件名
+  apikey: b613253d0eb946a89134fb4e60021e88 # 你的 apikey
+  server: bing # indexnow 服务器，可选值有:bing、yandex、indexnow
