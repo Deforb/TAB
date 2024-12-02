@@ -360,8 +360,9 @@ Table 3 summarizes statistical information of the univariate datasets. The first
     white-space: nowrap; /* 防止文本换行 */
   }
 
+  /* 第七行底部边框 */
   table.my-table1 tr:nth-child(7) td {
-    border-bottom: 2px solid grey; /* 第七行底部边框 */
+    border-bottom: 2px solid grey; 
   }
 
   .table-container {

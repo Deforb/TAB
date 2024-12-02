@@ -279,9 +279,7 @@ function alter(){
     //     }, 5000);
     // }
     // var link =document.getElementBy
-
 }
-
 </script>
 
 <!-- <h3 >Paper</h3>
@@ -332,7 +330,7 @@ function alter(){
 
 </div> -->
 
-<h3 >Visitors</h3>
+<h3>Visitors</h3>
 
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=79WsHTeP81NNR9W0EkNAmSZhjG9nq02p5uyJImsO1i4'></script>
 <!--
