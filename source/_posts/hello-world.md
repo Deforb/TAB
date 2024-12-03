@@ -16,8 +16,7 @@ TAB is an open-source library designed for time series anomaly detection researc
     </div>
     <div class="block-section description">
       <p lang="en">
-        OpenTS offers comprehensive time series benchmark datasets with diverse characteristics from
-        multiple domains and complex settings.
+        TAB encompasses 18 public multivariate time series datasets and 1,671 univariate time series from different domains to facilitate more comprehensive evaluations on diverse datasets.
       </p>
     </div>
   </div>
@@ -30,8 +29,7 @@ TAB is an open-source library designed for time series anomaly detection researc
     </div>
     <div class="block-section description">
       <p>
-        OpenTS covers a diverse range of methods, including statistical learning, machine learning,
-        and deep learning methods.
+        TAB covers a variety of TSAD methods, including Non-learning, Machine learning, Deep learning, LLM-based, and Time-series pre-trained methods.
       </p>
     </div>
   </div>
@@ -44,8 +42,7 @@ TAB is an open-source library designed for time series anomaly detection researc
     </div>
     <div class="block-section description">
       <p>
-        OpenTS offers a unified pipeline for evaluating time series forecasting and anomaly
-        detection methods under a variety of experiment configuration settings.
+        TAB features a unified and automated evaluation pipeline that enables fair and easy evaluation of TSAD methods.
       </p>
     </div>
   </div>
