@@ -400,7 +400,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>193</td>
     </tr>
     <tr>
-      <td>ECG [52]</td>
+      <td>ECG</td>
       <td>Health</td>
       <td>4.89</td>
       <td>229,990.9</td>
@@ -408,7 +408,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>22</td>
     </tr>
     <tr>
-      <td>IOPS [63]</td>
+      <td>IOPS</td>
       <td>Web</td>
       <td>2.15</td>
       <td>101,430.7</td>
@@ -416,7 +416,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>11</td>
     </tr>
     <tr>
-      <td>KDD21 [33]</td>
+      <td>KDD21</td>
       <td>Multiple</td>
       <td>0.58</td>
       <td>65,803.1</td>
@@ -424,7 +424,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>247</td>
     </tr>
     <tr>
-      <td>MGAB [74]</td>
+      <td>MGAB</td>
       <td>Mackey-Glass</td>
       <td>0.20</td>
       <td>100,000.0</td>
@@ -432,7 +432,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>6</td>
     </tr>
     <tr>
-      <td>NAB [2]</td>
+      <td>NAB</td>
       <td>Multiple</td>
       <td>9.82</td>
       <td>6,767.9</td>
@@ -440,7 +440,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>49</td>
     </tr>
     <tr>
-      <td>YAHOO [38]</td>
+      <td>YAHOO</td>
       <td>Multiple</td>
       <td>0.62</td>
       <td>1,563.1</td>
@@ -448,7 +448,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>362</td>
     </tr>
     <tr>
-      <td>NASA-MSL [7]</td>
+      <td>NASA-MSL</td>
       <td>Spacecraft</td>
       <td>4.00</td>
       <td>5,008.7</td>
@@ -456,7 +456,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>23</td>
     </tr>
     <tr>
-      <td>NASA-SMAP [7]</td>
+      <td>NASA-SMAP</td>
       <td>Spacecraft</td>
       <td>2.16</td>
       <td>10,536.8</td>
@@ -464,7 +464,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>36</td>
     </tr>
     <tr>
-      <td>Daphnet [6]</td>
+      <td>Daphnet</td>
       <td>Movement</td>
       <td>3.38</td>
       <td>12,342.9</td>
@@ -472,7 +472,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>21</td>
     </tr>
     <tr>
-      <td>GHL [19]</td>
+      <td>GHL</td>
       <td>Machinery</td>
       <td>0.25</td>
       <td>200,001.0</td>
@@ -480,7 +480,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>2</td>
     </tr>
     <tr>
-      <td>Genesis [76]</td>
+      <td>Genesis</td>
       <td>Machinery</td>
       <td>0.31</td>
       <td>16,220.0</td>
@@ -488,7 +488,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>1</td>
     </tr>
     <tr>
-      <td>OPP [64]</td>
+      <td>OPP</td>
       <td>Movement</td>
       <td>4.11</td>
       <td>31,328.5</td>
@@ -496,7 +496,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>465</td>
     </tr>
     <tr>
-      <td>SMD [72]</td>
+      <td>SMD</td>
       <td>Server Machine</td>
       <td>2.63</td>
       <td>25,810.4</td>
@@ -504,7 +504,7 @@ Table 3 summarizes statistical information of the univariate datasets. The first
       <td>184</td>
     </tr>
     <tr>
-      <td>SVDB [24]</td>
+      <td>SVDB</td>
       <td>Health</td>
       <td>4.87</td>
       <td>230,400.0</td>

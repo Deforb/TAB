@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: OpenTS - A Comprehensive and Fair Benchmark for Time Series Analytics
-subtitle: A Comprehensive and Fair Benchmark for Time Series Analytics
-description: A Comprehensive and Fair Benchmark for Time Series Analytics
+title: TAB - An Comprehensive and Fair Benchmark for Time Series Analytics
+subtitle: An open-source library designed for time series anomaly detection researchers.
+description: An open-source library designed for time series anomaly detection researchers.
 keywords:
 author: DecisionIntelligence |
 language: en
