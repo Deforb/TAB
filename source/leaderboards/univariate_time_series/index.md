@@ -692,7 +692,7 @@
         <tr>
           <th>Rank</th>
           <th>Model</th>
-          <th>Parameters</th>
+          <!-- <th>Parameters</th> -->
           <th>Score</th>
           <th>🥇</th>
           <th>🥈</th>

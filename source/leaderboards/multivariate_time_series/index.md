@@ -437,7 +437,7 @@
         <tr>
           <th>Rank</th>
           <th>Model</th>
-          <th>Parameters</th>
+          <!-- <th>Parameters</th> -->
           <th>Score</th>
           <th>🥇</th>
           <th>🥈</th>
@@ -532,7 +532,6 @@
     </table>
   </div>
 </div>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src='./modelMetricsDashboard.js'></script>
