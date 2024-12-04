@@ -111,7 +111,7 @@
   }
   .checkbox-container {
     display: grid;
-    grid-template-columns: 0.7fr 0.7fr; /* 分为两列 */
+    grid-template-columns: 0.8fr 0.7fr; /* 分为两列 */
     padding-right: 10px; /* Add some space between checkboxes and table */
     overflow-y: auto; /* Enable vertical scroll if needed */
   }
@@ -247,131 +247,341 @@
 <div class="main-container" id="main-container-full">
   <div class="checkbox-wrapper">
     <div class="checkbox-container" id="dataset-container-mul-type-full">
-      <div class="category" style="margin-bottom:0px;width: 256px;">
+      <div class="category" style="margin-bottom: 0px; width: 256px">
         <h3>
           Learning Paradigm
-          <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleCategory('Type','full', true)" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleCategory('Type','full', false)" style="padding:0 3px">off</a>]</b>
+          <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight: bold"
+            > [<a
+              href="javascript:void(0);"
+              onclick="toggleCategory('Type','full', true)"
+              style="padding: 0 3px"
+              >all</a
+            >|<a
+              href="javascript:void(0);"
+              onclick="toggleCategory('Type','full', false)"
+              style="padding: 0 3px"
+              >off</a
+            >]</b
+          >
         </h3>
         <div class="checkbox-wrapper1">
           <div class="checkbox-item">
-            <input type="checkbox" id="Type-full/Non-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>Non-Learning</label>
+            <input
+              type="checkbox"
+              id="Type-full/Non-Learning-Model"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Type-full"
+            />
+            <label for="Type-full/Non-Learning-Model">Non-Learning</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Type-full/Machine-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>Machine-Learning</label>
+            <input
+              type="checkbox"
+              id="Type-full/Machine-Learning-Model"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Type-full"
+            />
+            <label for="Type-full/Machine-Learning-Model">Machine-Learning</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Type-full/Deep-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>Deep-Learning</label>
+            <input
+              type="checkbox"
+              id="Type-full/Deep-Learning-Model"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Type-full"
+            />
+            <label for="Type-full/Deep-Learning-Model">Deep-Learning</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Type-full/LLM-Based-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>LLM-Based</label>
+            <input
+              type="checkbox"
+              id="Type-full/LLM-Based-Model"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Type-full"
+            />
+            <label for="Type-full/LLM-Based-Model">LLM-Based</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Type-full/Pre-trained-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>TS Pre-trained</label>
+            <input
+              type="checkbox"
+              id="Type-full/Pre-trained-Model"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Type-full"
+            />
+            <label for="Type-full/Pre-trained-Model">TS Pre-trained</label>
           </div>
         </div>
       </div>
     </div>
-     <div style='width:95%'>
-      <hr style="border:1px dashed #ddd">
+    <div style="width: 95%">
+      <hr style="border: 1px dashed #ddd" />
     </div>
     <div class="checkbox-container" id="dataset-container-mul-up-full">
-      <div class="category" style="margin-bottom:0px">
+      <div class="category" style="margin-bottom: 0px">
         <h3>
-          <input type="checkbox" id="select-all-Metrics-full" style='display:none' onchange="toggleCategory('Metrics','full', this.checked)">
+          <input
+            type="checkbox"
+            id="select-all-Metrics-full"
+            style="display: none"
+            onchange="toggleCategory('Metrics','full', this.checked)"
+          />
           Metrics
-          <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleCategory('Metrics','full', true)" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleCategory('Metrics','full', false)" style="padding:0 3px">off</a>]</b>
+          <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight: bold"
+            > [<a
+              href="javascript:void(0);"
+              onclick="toggleCategory('Metrics','full', true)"
+              style="padding: 0 3px"
+              >all</a
+            >|<a
+              href="javascript:void(0);"
+              onclick="toggleCategory('Metrics','full', false)"
+              style="padding: 0 3px"
+              >off</a
+            >]</b
+          >
         </h3>
         <div class="checkbox-wrapper-metrics">
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/A-P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>A-P</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/A-P"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/A-P">A-P</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/A-R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>A-R</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/A-R"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/A-R">A-R</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/Acc" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>Acc</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/Acc"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/Acc">Acc</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/Aff-F1" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>Aff-F1</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/Aff-F1"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/Aff-F1">Aff-F1</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/Aff-P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>Aff-P</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/Aff-P"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/Aff-P">Aff-P</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/Aff-R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>Aff-R</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/Aff-R"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/Aff-R">Aff-R</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/F1" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>F1</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/F1"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/F1">F1</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>P</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/P"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/P">P</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/R"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/R">R</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/R-A-P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-A-P</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/R-A-P"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/R-A-P">R-A-P</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/R-A-R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-A-R</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/R-A-R"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/R-A-R">R-A-R</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/R-F1" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-F1</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/R-F1"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/R-F1">R-F1</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/R-P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-P</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/R-P"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/R-P">R-P</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/R-R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-R</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/R-R"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/R-R">R-R</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/V-PR" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>V-PR</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/V-PR"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/V-PR">V-PR</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="Metrics-full/V-ROC" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>V-ROC</label>
+            <input
+              type="checkbox"
+              id="Metrics-full/V-ROC"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Metrics-full"
+            />
+            <label for="Metrics-full/V-ROC">V-ROC</label>
           </div>
         </div>
       </div>
     </div>
-    <div style='width:95%'>
-      <hr style="border:1px dashed #ddd">
+    <div style="width: 95%">
+      <hr style="border: 1px dashed #ddd" />
     </div>
-    <div id='all-full'>
-      <div class='checkbox-container'>
+    <div id="all-full">
+      <div class="checkbox-container">
         <div class="all-checkbox">
           <!-- <input type="checkbox" id="select-all" onclick="toggleSelectAll(this.checked,'full')" style="display:none"> -->
           <label for="select-all">
-            <h3 style="white-space:nowrap">Datasets
-              <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleSelectAll(true,'full')" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleSelectAll(false,'full')" style="padding:0 3px">off</a>]</b>
+            <h3 style="white-space: nowrap">
+              Datasets
+              <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight: bold"
+                > [<a
+                  href="javascript:void(0);"
+                  onclick="toggleSelectAll(true,'full')"
+                  style="padding: 0 3px"
+                  >all</a
+                >|<a
+                  href="javascript:void(0);"
+                  onclick="toggleSelectAll(false,'full')"
+                  style="padding: 0 3px"
+                  >off</a
+                >]</b
+              >
             </h3>
           </label>
         </div>
       </div>
-      <div class="checkbox-container" id="dataset-container-full">checkbox-container</div>
+      <div class="checkbox-container" id="dataset-container-full">
+        <div class="category">
+          <h3>
+            <input type="checkbox" id="select-all-Anomaly_Types" />
+            Anomaly Types
+          </h3>
+          <div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="Datasets-full/Global"
+                onchange="handleChildCheckboxChange(event)"
+                class="checkbox-Datasets-full"
+              />
+              <label for="Datasets-full/Global">Global</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="Datasets-full/Contextual"
+                onchange="handleChildCheckboxChange(event)"
+                class="checkbox-Datasets-full"
+              />
+              <label for="Datasets-full/Contextual">Contextual</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="Datasets-full/Shapelet"
+                onchange="handleChildCheckboxChange(event)"
+                class="checkbox-Datasets-full"
+              />
+              <label for="Datasets-full/Shapelet">Shapelet</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="Datasets-full/Seasonal"
+                onchange="handleChildCheckboxChange(event)"
+                class="checkbox-Datasets-full"
+              />
+              <label for="Datasets-full/Seasonal">Seasonal</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="Datasets-full/Trend"
+                onchange="handleChildCheckboxChange(event)"
+                class="checkbox-Datasets-full"
+              />
+              <label for="Datasets-full/Trend">Trend</label>
+            </div>
+            <div class="checkbox-item">
+              <input
+                type="checkbox"
+                id="Datasets-full/Mix"
+                onchange="handleChildCheckboxChange(event)"
+                class="checkbox-Datasets-full"
+              />
+              <label for="Datasets-full/Mix">Mix</label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div style='width:95%'>
-      <hr style="border:1px dashed #ddd">
+    <div style="width: 95%">
+      <hr style="border: 1px dashed #ddd" />
     </div>
     <!-- Forecasting Horizons -->
     <!-- <div class="checkbox-container1" id="dataset-container-mul-down">
@@ -405,32 +615,78 @@
       <hr style="border:1px dashed #ddd">
     </div> -->
     <div class="checkbox-container1" id="dataset-container-mul-down1">
-      <div class="category" style="margin-bottom:0px">
+      <div class="category" style="margin-bottom: 0px">
         <h3>
-          <input type="checkbox" id="select-all-Score-full" style='display:none' onchange="toggleCategory('Score','full', this.checked)">
+          <input
+            type="checkbox"
+            id="select-all-Score-full"
+            style="display: none"
+            onchange="toggleCategory('Score','full', this.checked)"
+          />
           Score
         </h3>
         <div class="checkbox-wrapper3">
           <div class="checkbox-item">
-            <input type="radio" id="Score-full/1" value="Score/1" onchange="handleChildCheckboxChange(event)" class="checkbox-Score-full">
+            <input
+              type="radio"
+              id="Score-full/1"
+              value="Score/1"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Score-full"
+            />
             <label for="Score/1">🥇</label>
           </div>
           <div class="checkbox-item">
-            <input type="radio" id="Score-full/2" value="Score/2" onchange="handleChildCheckboxChange(event)" class="checkbox-Score-full">
+            <input
+              type="radio"
+              id="Score-full/2"
+              value="Score/2"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Score-full"
+            />
             <label for="Score/2">🥇 + 🥈 + 🥉</label>
           </div>
-          <div class="checkbox-item" style="flex-wrap:nowrap;">
-            <input type="radio" id="Score-full/3" value="Score/3" onchange="handleChildCheckboxChange(event)" class="checkbox-Score-full">
+          <div class="checkbox-item" style="flex-wrap: nowrap">
+            <input
+              type="radio"
+              id="Score-full/3"
+              value="Score/3"
+              onchange="handleChildCheckboxChange(event)"
+              class="checkbox-Score-full"
+            />
             <label for="Score/3">
-            <input type="number" id="score-full/3/1" name="score/3/1" value="3" oninput="validateInput(this)"> × 🥇 + 
-            <input type="number" id="score-full/3/2" name="score/3/2" value="2" oninput="validateInput(this)"> × 🥈 + 
-            <input type="number" id="score-full/3/3" name="score/3/3" value="1" oninput="validateInput(this)"> × 🥉</label>
+              <input
+                type="number"
+                id="score-full/3/1"
+                name="score/3/1"
+                value="3"
+                oninput="validateInput(this)"
+              />
+              × 🥇 +
+              <input
+                type="number"
+                id="score-full/3/2"
+                name="score/3/2"
+                value="2"
+                oninput="validateInput(this)"
+              />
+              × 🥈 +
+              <input
+                type="number"
+                id="score-full/3/3"
+                name="score/3/3"
+                value="1"
+                oninput="validateInput(this)"
+              />
+              × 🥉</label
+            >
           </div>
         </div>
       </div>
+      <div style="height:5px"></div>
     </div>
   </div>
-  <div style="width:100%;margin-top: 0;" class="table-container" id='table-container-mul'>
+  <div style="width: 100%; margin-top: 0" class="table-container" id="table-container-mul">
     <table id="full" class="my-table2">
       <thead>
         <tr>
@@ -446,21 +702,88 @@
           <th>Year</th>
         </tr>
       </thead>
-      <tbody>
-      </tbody>
+      <tbody></tbody>
     </table>
   </div>
 </div>
 
 ### Rules:
 
-- For short-term time series datasets like ILI, the sample size under the 5% sampling condition is insufficient to support fine-tuning of the foundation model. Therefore, we only conduct tests on long-term time series datasets.
-
-- For time series foundation models, we consider 10 datasets and 2 error metrics, i.e., MAE and MSE. For each dataset, we consider 4 forecasting horizons. We default to uniformly sampling 5% of the samples from the training set for model fine-tuning and evaluation on test set.
-
+- For univariate forecasting algorithms, we consider 8,068 series, and the MAE、MSE、MSMAPE metrics, thus having 24,204 (8,068 \* 3) unique evaluation settings, [click here](./#Univariate-forecasting-results) to see the detailed results, [click here](./result/UTSF_RESULTS.zip) to download detailed evaluation results for each of the 8,068 univariate time series.
+- Datasets are classified by sampling frequency into Yearly, Quarterly, Monthly, Weekly, Daily, Hourly, and Other. Their corresponding forecasting horizons are 6, 8, 18, 13, 14, 48, and 8, respectively. The look-back window is set to 1.25 times the respective forecasting horizon.
 - For each forecasting algorithm, we count the number of times that the algorithm receives the gold, silver, and bronze medals, i.e., having the lowest, 2nd lowest, and 3rd lowest errors, shown as 🥇, 🥈, and 🥉, respectively.
-
 - We provide three different types of scores for ranking the forecasting algorithms. First, the scores equal to the numbers of gold medals. Second, the scores are the sum of the numbers of gold, silver, and bronze medals. Third, the scores are the weighted sum of the gold, silver, and bronze medals, where the weights can be customized. The larger the score, the higher the ranking.
+
+<div style="height:30px"></div>
+
+### Univariate forecasting results
+
+<div style="height:10px"></div>
+
+#### Results classified according to characteristics
+
+<div class="main-container" id="main-container-uni1">
+    <div style="width:100%;overflow-y:auto;height:800px" class="table-container" id="table-container-uni1">
+        <table id="univariateTable" class="my-table2">
+            <thead>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div style="height:30px"></div>
+
+#### Results classified according to frequency
+
+<div class="main-container" id="main-container-uni2">
+    <div style="width:100%;overflow-y:auto;height:800px" class="table-container" id="table-container-uni2">
+        <table id="univariateTable" class="my-table2">
+            <thead>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+.sticky-col{
+            position: sticky;
+            left: 0; /* 固定在左侧 */
+            z-index: 1; /* 设定堆叠顺序 */
+        }
+/* 确保交叉单元格的堆叠顺序 */
+.sticky-col-header {
+    z-index: 3;
+}
+.sticky-th {
+            position: sticky;
+            top: 0; /* 固定在顶部 */
+            z-index: 2; /* 设定堆叠顺序 */
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 3px -2px;
+        }
+.double-underline {
+            position: relative;
+            display: inline-block;
+            /* font: inherit; 继承父元素的字体样式 */
+        }
+        .double-underline::after,
+        .double-underline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 1px; /* 下划线的厚度 */
+            background-color: black; /* 下划线的颜色 */
+        }
+        .double-underline::before {
+            bottom: 3px; /* 第一条下划线的位置 */
+        }
+        .double-underline::after {
+            bottom: 0px; /* 第二条下划线的位置 */
+        }
+</style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src='./modelMetricsDashboard.js'></script>

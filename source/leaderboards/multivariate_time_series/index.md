@@ -247,32 +247,32 @@
 <div class="main-container" id="main-container-full">
   <div class="checkbox-wrapper">
     <div class="checkbox-container" id="dataset-container-mul-type-full">
-      <div class="category" style="margin-bottom:0px;width: 241px;">
+      <div class="category" style="margin-bottom:0px;width: 256px;">
         <h3>
           <input type="checkbox" id="select-all-type-full" style='display:none' onchange="toggleCategory('Type','full', this.checked)">
-          Model Type
+          Learning Paradigm
           <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleCategory('Type','full', true)" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleCategory('Type','full', false)" style="padding:0 3px">off</a>]</b>
         </h3>
         <div class="checkbox-wrapper1">
           <div class="checkbox-item">
             <input type="checkbox" id="Type-full/Non-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>Non Learning Model</label>
+            <label for="Type-full/Non-Learning-Model">Non-Learning</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Type-full/Machine-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>Machine Learning Model</label>
+            <label for="Type-full/Machine-Learning-Model" >Machine-Learning</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Type-full/Deep-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>Deep Learning Model</label>
+            <label for="Type-full/Deep-Learning-Model">Deep-Learning</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Type-full/LLM-Based-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>LLM Based Model</label>
+            <label for="Type-full/LLM-Based-Model">LLM-Based</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Type-full/Pre-trained-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-full">
-            <label>TS Pre-trained Model</label>
+            <label for="Type-full/Pre-trained-Model">TS Pre-trained</label>
           </div>
         </div>
       </div>
@@ -290,67 +290,67 @@
         <div class="checkbox-wrapper-metrics">
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/A-P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>A-P</label>
+            <label for="Metrics-full/A-P">A-P</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/A-R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>A-R</label>
+            <label for="Metrics-full/A-R">A-R</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/Acc" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>Acc</label>
+            <label for="Metrics-full/Acc">Acc</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/Aff-F1" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>Aff-F1</label>
+            <label for="Metrics-full/Aff-F1">Aff-F1</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/Aff-P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>Aff-P</label>
+            <label for="Metrics-full/Aff-P">Aff-P</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/Aff-R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>Aff-R</label>
+            <label for="Metrics-full/Aff-R">Aff-R</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/F1" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>F1</label>
+            <label for="Metrics-full/F1">F1</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>P</label>
+            <label for="Metrics-full/P">P</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R</label>
+            <label for="Metrics-full/R">R</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/R-A-P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-A-P</label>
+            <label for="Metrics-full/R-A-P">R-A-P</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/R-A-R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-A-R</label>
+            <label for="Metrics-full/R-A-R">R-A-R</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/R-F1" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-F1</label>
+            <label for="Metrics-full/R-F1">R-F1</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/R-P" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-P</label>
+            <label for="Metrics-full/R-P">R-P</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/R-R" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>R-R</label>
+            <label for="Metrics-full/R-R">R-R</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/V-PR" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>V-PR</label>
+            <label for="Metrics-full/V-PR">V-PR</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="Metrics-full/V-ROC" onchange="handleChildCheckboxChange(event)" class="checkbox-Metrics-full">
-            <label>V-ROC</label>
+            <label for="Metrics-full/V-ROC">V-ROC</label>
           </div>
         </div>
       </div>
@@ -455,13 +455,84 @@
 
 ### Rules:
 
-- For short-term time series datasets like ILI, the sample size under the 5% sampling condition is insufficient to support fine-tuning of the foundation model. Therefore, we only conduct tests on long-term time series datasets.
-
-- For time series foundation models, we consider 10 datasets and 2 error metrics, i.e., MAE and MSE. For each dataset, we consider 4 forecasting horizons. We default to uniformly sampling 5% of the samples from the training set for model fine-tuning and evaluation on test set.
+- For multivariate forecasting algorithms, we consider 25 datasets and 2 error metrics, i.e., MAE and MSE. For each dataset, we consider 4 forecasting horizons. This gives 200 (25 _ 4 _ 2) unique evaluation settings ([click here](../200seetings) for details), [click here](./#Multivariate-forecasting-results) to see the detailed results, [click here](./MTSF_RESULTS.csv) to download detailed evaluation results for each of the 25 multivariate time series.
 
 - For each forecasting algorithm, we count the number of times that the algorithm receives the gold, silver, and bronze medals, i.e., having the lowest, 2nd lowest, and 3rd lowest errors, shown as 🥇, 🥈, and 🥉, respectively.
 
 - We provide three different types of scores for ranking the forecasting algorithms. First, the scores equal to the numbers of gold medals. Second, the scores are the sum of the numbers of gold, silver, and bronze medals. Third, the scores are the weighted sum of the gold, silver, and bronze medals, where the weights can be customized. The larger the score, the higher the ranking.
+- Profile1 refers to a subset of ten datasets commonly used in recent literature, including Electricity, ETTm1, ETTm2, ETTh1, ETTh2, Traffic, Solar, Weather, ILI, and Exchange.
+
+<div style="height:30px"></div>
+
+### Multivariate forecasting results
+
+<div style="height:10px"></div>
+
+<style>
+  .sticky-col {
+    background-color: white;
+    position: sticky;
+    left: 0; /* 固定在左侧 */
+    z-index: 1; /* 设定堆叠顺序 */
+    /* box-shadow: rgba(0, 0, 0, 0.4) -2px 0px 3px -1px; */
+  }
+  /* 确保交叉单元格的堆叠顺序 */
+  .sticky-col-header {
+    z-index: 3;
+  }
+  .sticky-th {
+    position: sticky;
+    top: 0; /* 固定在顶部 */
+    z-index: 2; /* 设定堆叠顺序 */
+  }
+  .double-underline {
+    position: relative;
+    display: inline-block;
+    /* font: inherit; 继承父元素的字体样式 */
+  }
+  .double-underline::after,
+  .double-underline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px; /* 下划线的厚度 */
+    background-color: black; /* 下划线的颜色 */
+  }
+  .double-underline::before {
+    bottom: 3px; /* 第一条下划线的位置 */
+  }
+  .double-underline::after {
+    bottom: 0px; /* 第二条下划线的位置 */
+  }
+  .sticky-col2 {
+    position: sticky;
+    left: 36px; /* 根据第一列的宽度设置 */
+    z-index: 1;
+    background-color: #fff;
+  }
+  .sticky-col2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px; /* 调整阴影位置 */
+    width: 5px;
+    height: 105%;
+    box-shadow: 2px 0 3px -2px rgba(0, 0, 0, 0.4); /* 右侧阴影 */
+  }
+</style>
+
+<div class="main-container">
+  <div style="width:100%;overflow-y:auto;height:800px" class="table-container">
+    <table id="multivariateTable211" class="my-table2">
+      <thead>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src='./modelMetricsDashboard.js'></script>
