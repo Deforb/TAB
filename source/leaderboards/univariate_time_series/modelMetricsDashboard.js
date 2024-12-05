@@ -121,7 +121,7 @@ function phraseInputTable(input, setting) {
     const key = entry['Dataset-Quantity-metrics']
     if (!key) continue
 
-    const [data, metric] = key.split('-96')
+    const [data, metric] = key.split('-96-')
 
     if (!allData[setting].dataset.includes(data)) {
       allData[setting].dataset.push(data)
