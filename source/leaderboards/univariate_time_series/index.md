@@ -488,13 +488,12 @@
         </div>
       </div>
     </div>
-    <div style="width: 95%">
+    <!-- <div style="width: 95%">
       <hr style="border: 1px dashed #ddd" />
     </div>
     <div id="all-full">
       <div class="checkbox-container">
         <div class="all-checkbox">
-          <!-- <input type="checkbox" id="select-all" onclick="toggleSelectAll(this.checked,'full')" style="display:none"> -->
           <label for="select-all">
             <h3 style="white-space: nowrap">
               Datasets
@@ -579,41 +578,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div style="width: 95%">
       <hr style="border: 1px dashed #ddd" />
     </div>
-    <!-- Forecasting Horizons -->
-    <!-- <div class="checkbox-container1" id="dataset-container-mul-down">
-      <div class="category" style="margin-bottom:0px">
-        <h3>
-          <input type="checkbox" id="select-all-Horizons-full" style='display:none' onchange="toggleCategory('Horizons', this.checked)">
-          Forecasting Horizons
-          <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleCategory('Horizons','full', true)" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleCategory('Horizons','full', false)" style="padding:0 3px">off</a>]</b>
-        </h3>
-        <div class="checkbox-wrapper2">
-          <div class="checkbox-item">
-            <input type="checkbox" id="Horizons-full/96" onchange="handleChildCheckboxChange(event)" class="checkbox-Horizons-full">
-            <label for="Horizons/96">96</label>
-          </div>
-          <div class="checkbox-item">
-            <input type="checkbox" id="Horizons-full/192" onchange="handleChildCheckboxChange(event)" class="checkbox-Horizons-full">
-            <label for="Horizons/192">192</label>
-          </div>
-          <div class="checkbox-item">
-            <input type="checkbox" id="Horizons-full/336" onchange="handleChildCheckboxChange(event)" class="checkbox-Horizons-full">
-            <label for="Horizons/336">336</label>
-          </div>
-          <div class="checkbox-item">
-            <input type="checkbox" id="Horizons-full/720" onchange="handleChildCheckboxChange(event)" class="checkbox-Horizons-full">
-            <label for="Horizons/720">720</label>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style='width:95%'>
-      <hr style="border:1px dashed #ddd">
-    </div> -->
     <div class="checkbox-container1" id="dataset-container-mul-down1">
       <div class="category" style="margin-bottom: 0px">
         <h3>
