@@ -505,17 +505,22 @@ function submitSelection(setting) {
   })
 
   // Process selected metrics, horizons, and datasets to update rankings
-  selectMetrics.forEach(metric => {
-    // selectHorizons.forEach(horizon => {
-    selectDatasets.forEach(dataset => {
+  selectDatasets.forEach(dataset => {
+    selectMetrics.forEach(metric => {
       const key = `${dataset}-${96}-${metric}`
       const result = allData[setting].result[key]
-      // console.log('result:', result)
 
-      sortedKeys = selectedMethods.sort((a, b) => result[a] - result[b])
-      rank[sortedKeys[0]].rank1 += 1
-      rank[sortedKeys[1]].rank2 += 1
-      rank[sortedKeys[2]].rank3 += 1
+      const sortedMethods = selectedMethods.sort((a, b) => result[b] - result[a])
+
+      rank[sortedMethods[0]].rank1 += 1
+      let i = 1
+      while (result[sortedMethods[i]] == 1) {
+        rank[sortedMethods[i]].rank1 += 1
+        i += 1
+      }
+
+      rank[sortedMethods[i]].rank2 += 1
+      rank[sortedMethods[i + 1]].rank3 += 1
     })
   })
 

@@ -120,10 +120,10 @@ function phraseInputTable(input, setting) {
   // Phrase result
   for (let i = 8; i < input.length; i++) {
     const entry = input[i]
-    const key = entry['Dataset-Quantity-metrics']
-    if (!key) continue
+    const Dataset_Quantity_Metrics = entry['Dataset-Quantity-metrics']
+    if (!Dataset_Quantity_Metrics) continue
 
-    const [data, horizon, metric] = key.split('-')
+    const [data, metric] = Dataset_Quantity_Metrics.split('-96-')
 
     if (!allData[setting].dataset.includes(data)) {
       allData[setting]['dataset'].push(data)
@@ -131,7 +131,7 @@ function phraseInputTable(input, setting) {
     if (!allData[setting].metric.includes(metric)) {
       allData[setting]['metric'].push(metric)
     }
-    allData[setting].result[key] = entry
+    allData[setting].result[Dataset_Quantity_Metrics] = entry
   }
 
   // 按大类分组数据集
@@ -513,17 +513,29 @@ function submitSelection(setting) {
   })
 
   // Process selected metrics, horizons, and datasets to update rankings
-  selectMetrics.forEach(metric => {
-    // selectHorizons.forEach(horizon => {
-    selectDatasets.forEach(dataset => {
+  // selectMetrics.forEach(metric => {
+  // selectHorizons.forEach(horizon => {
+  // selectDatasets.forEach(dataset => {
+  selectDatasets.forEach(dataset => {
+    selectMetrics.forEach(metric => {
       const key = `${dataset}-${96}-${metric}`
       const result = allData[setting].result[key]
       // console.log('result:', result)
 
-      sortedKeys = selectedMethods.sort((a, b) => result[a] - result[b])
-      rank[sortedKeys[0]].rank1 += 1
-      rank[sortedKeys[1]].rank2 += 1
-      rank[sortedKeys[2]].rank3 += 1
+      // const sortedMethods = selectedMethods.sort((a, b) => result[a] - result[b])
+      const sortedMethods = selectedMethods.sort((a, b) => result[b] - result[a])
+
+      rank[sortedMethods[0]].rank1 += 1
+      let i = 1
+      while (result[sortedMethods[i]] == 1) {
+        rank[sortedMethods[i]].rank1 += 1
+        i += 1
+      }
+
+      rank[sortedMethods[i]].rank2 += 1
+      // if (sortedMethods[i + 1] === 'KNN') console.log('KNN rank3:', key)
+
+      rank[sortedMethods[i + 1]].rank3 += 1
     })
   })
 
