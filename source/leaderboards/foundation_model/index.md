@@ -1,6 +1,6 @@
 # Leaderboards
 
-## Leaderboard for uni
+## Leaderboard for univariate 
 
 <style>
   /* 基本表格样式 */
@@ -420,7 +420,7 @@
   </div>
 </div>
 
-## Leaderboard for multi 
+## Leaderboard for multivariate 
 
 <div class="main-container" id="main-container-multi">
   <div class="checkbox-wrapper">
