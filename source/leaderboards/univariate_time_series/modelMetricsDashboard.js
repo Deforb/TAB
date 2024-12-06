@@ -24,9 +24,11 @@ const MODEL_TYPE = {
     'DualTF',
     'LSTMED',
     'DCdetector',
+
+    'LSTM', // 12.6 add
   ],
   'LLM-Based-Model': ['GPT4TS', 'UniTime'],
-  'Pre-trained-Model': ['Timer', 'UniTS', 'TinyTimeMixer', 'Moment'],
+  'Pre-trained-Model': ['Timer', 'UniTS', 'TinyTimeMixer', 'Moment', 'TTM'],
 }
 
 const allData = {

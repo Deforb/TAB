@@ -48,7 +48,6 @@ TAB is an open-source library designed for time series anomaly detection researc
   </div>
 </div>
 
-
 <style>
 .main-wrapper {
     display:flex;
@@ -329,7 +328,9 @@ function alter(){
 
 <h3>Visitors</h3>
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=79WsHTeP81NNR9W0EkNAmSZhjG9nq02p5uyJImsO1i4'></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=278&t=n&d=ci3q8pHcV1YP18Iajpcs5SiRkYyBx90UXA0SkVpfzpU'></script>
+<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ci3q8pHcV1YP18Iajpcs5SiRkYyBx90UXA0SkVpfzpU&cl=ffffff&w=a"></script> -->
+<!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=79WsHTeP81NNR9W0EkNAmSZhjG9nq02p5uyJImsO1i4'></script> -->
 <!--
 <h3 >About Us</h3>
         <div class="bottom-text">

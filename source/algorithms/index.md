@@ -298,7 +298,7 @@ To investigate the strengths and limitations of different time series AD methods
     </tr>
     <tr>
         <td><b>TinyTimeMixer</b></td>
-        <td>ttm</td>
+        <td>TTM</td>
         <td>Adaptive Patching + <br>
         Data Augmentation via Downsampling + <br>
         Resolution Prefix Tuning + Exogenous Mixer</td>
