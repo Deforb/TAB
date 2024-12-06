@@ -429,6 +429,7 @@
           </div>
         </div>
       </div>
+      <div style="height:5px"></div>
     </div>
   </div>
   <div style="width:100%;margin-top: 0;" class="table-container" id='table-container-mul'>
@@ -455,7 +456,7 @@
 
 ### Rules:
 
-- For multivariate forecasting algorithms, we consider 25 datasets and 2 error metrics, i.e., MAE and MSE. For each dataset, we consider 4 forecasting horizons. This gives 200 (25 _ 4 _ 2) unique evaluation settings ([click here](../200seetings) for details), [click here](./#Multivariate-forecasting-results) to see the detailed results, [click here](./MTSF_RESULTS.csv) to download detailed evaluation results for each of the 25 multivariate time series.
+- For multivariate forecasting algorithms, we consider 25 datasets and 2 error metrics, i.e., MAE and MSE. For each dataset, we consider 4 forecasting horizons. This gives 200 (25 * 4 * 2) unique evaluation settings ([click here](../200seetings) for details), [click here](./#Multivariate-forecasting-results) to see the detailed results, [click here](./MTSF_RESULTS.csv) to download detailed evaluation results for each of the 25 multivariate time series.
 
 - For each forecasting algorithm, we count the number of times that the algorithm receives the gold, silver, and bronze medals, i.e., having the lowest, 2nd lowest, and 3rd lowest errors, shown as 🥇, 🥈, and 🥉, respectively.
 
@@ -464,7 +465,7 @@
 
 <div style="height:30px"></div>
 
-### Multivariate forecasting results
+<!-- ### Multivariate forecasting results -->
 
 <div style="height:10px"></div>
 
