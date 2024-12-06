@@ -1,6 +1,6 @@
 # Leaderboards
 
-## Leaderboard for univariate 
+## Leaderboard for univariate
 
 <style>
   /* 基本表格样式 */
@@ -280,6 +280,32 @@
     <div style='width:95%'>
       <hr style="border:1px dashed #ddd">
     </div>
+    <div class="checkbox-container" id="dataset-container-mul-strategy-uni">
+      <div class="category" style="margin-bottom:0px;width: 300px;">
+        <h3>
+          <input type="checkbox" id="select-all-strategy-uni" style='display:none' onchange="toggleCategory('Strategy','uni', this.checked)">
+          Evaluation strategies
+          <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleCategory('Strategy','uni', true)" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleCategory('Strategy','uni', false)" style="padding:0 3px">off</a>]</b>
+        </h3>
+        <div class="checkbox-wrapper1">
+          <div class="checkbox-item">
+            <input type="checkbox" id="Strategy-uni/zero" onchange="handleChildCheckboxChange(event)" class="checkbox-Strategy-uni">
+            <label for="Strategy-uni/zero">Zero</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="Strategy-uni/few" onchange="handleChildCheckboxChange(event)" class="checkbox-Strategy-uni">
+            <label for="Strategy-uni/few">Few</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="Strategy-uni/full" onchange="handleChildCheckboxChange(event)" class="checkbox-Strategy-uni">
+            <label for="Strategy-uni/full">Full</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style='width:95%'>
+      <hr style="border:1px dashed #ddd">
+    </div>
     <div class="checkbox-container" id="dataset-container-mul-up-uni">
       <div class="category" style="margin-bottom:0px">
         <h3>
@@ -420,7 +446,7 @@
   </div>
 </div>
 
-## Leaderboard for multivariate 
+## Leaderboard for multivariate
 
 <div class="main-container" id="main-container-multi">
   <div class="checkbox-wrapper">
@@ -432,18 +458,6 @@
           <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleCategory('Type','multi', true)" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleCategory('Type','multi', false)" style="padding:0 3px">off</a>]</b>
         </h3>
         <div class="checkbox-wrapper1">
-          <!-- <div class="checkbox-item">
-            <input type="checkbox" id="Type-multi/Non-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-multi">
-            <label for="Type-multi/Non-Learning-Model">Non-Learning</label>
-          </div>
-          <div class="checkbox-item">
-            <input type="checkbox" id="Type-multi/Machine-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-multi">
-            <label for="Type-multi/Machine-Learning-Model" >Machine-Learning</label>
-          </div>
-          <div class="checkbox-item">
-            <input type="checkbox" id="Type-multi/Deep-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-multi">
-            <label for="Type-multi/Deep-Learning-Model">Deep-Learning</label>
-          </div> -->
           <div class="checkbox-item">
             <input type="checkbox" id="Type-multi/LLM-Based-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-multi">
             <label for="Type-multi/LLM-Based-Model">LLM-Based</label>
@@ -456,6 +470,32 @@
       </div>
     </div>
      <div style='width:95%'>
+      <hr style="border:1px dashed #ddd">
+    </div>
+        <div class="checkbox-container" id="dataset-container-mul-strategy-multi">
+      <div class="category" style="margin-bottom:0px;width: 300px;">
+        <h3>
+          <input type="checkbox" id="select-all-strategy-multi" style='display:none' onchange="toggleCategory('Strategy','multi', this.checked)">
+          Evaluation strategies
+          <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleCategory('Strategy','multi', true)" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleCategory('Strategy','multi', false)" style="padding:0 3px">off</a>]</b>
+        </h3>
+        <div class="checkbox-wrapper1">
+          <div class="checkbox-item">
+            <input type="checkbox" id="Strategy-multi/zero" onchange="handleChildCheckboxChange(event)" class="checkbox-Strategy-multi">
+            <label for="Strategy-multi/zero">Zero</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="Strategy-multi/few" onchange="handleChildCheckboxChange(event)" class="checkbox-Strategy-multi">
+            <label for="Strategy-multi/few">Few</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="Strategy-multi/full" onchange="handleChildCheckboxChange(event)" class="checkbox-Strategy-multi">
+            <label for="Strategy-multi/full">Full</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style='width:95%'>
       <hr style="border:1px dashed #ddd">
     </div>
     <div class="checkbox-container" id="dataset-container-mul-up-multi">
@@ -601,13 +641,9 @@
 
 ### Rules:
 
-- For short-term time series datasets like ILI, the sample size under the 5% sampling condition is insufficient to support fine-tuning of the foundation model. Therefore, we only conduct tests on long-term time series datasets.
+- For each anomaly detection algorithm, we count the number of times that the algorithm receives the gold, silver, and bronze medals, i.e., having the lowest, 2nd lowest, and 3rd lowest errors, shown as 🥇, 🥈, and 🥉, respectively.
 
-- For time series foundation models, we consider 10 datasets and 2 error metrics, i.e., MAE and MSE. For each dataset, we consider 4 forecasting horizons. We default to uniformly sampling 5% of the samples from the training set for model fine-tuning and evaluation on test set.
-
-- For each forecasting algorithm, we count the number of times that the algorithm receives the gold, silver, and bronze medals, i.e., having the lowest, 2nd lowest, and 3rd lowest errors, shown as 🥇, 🥈, and 🥉, respectively.
-
-- We provide three different types of scores for ranking the forecasting algorithms. First, the scores equal to the numbers of gold medals. Second, the scores are the sum of the numbers of gold, silver, and bronze medals. Third, the scores are the weighted sum of the gold, silver, and bronze medals, where the weights can be customized. The larger the score, the higher the ranking.
+- We provide three different types of scores for ranking the anomaly detection algorithms. First, the scores equal to the numbers of gold medals. Second, the scores are the sum of the numbers of gold, silver, and bronze medals. Third, the scores are the weighted sum of the gold, silver, and bronze medals, where the weights can be customized. The larger the score, the higher the ranking.
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src='./modelMetricsDashboard.js'></script>

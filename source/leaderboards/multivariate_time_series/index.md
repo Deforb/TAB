@@ -456,18 +456,9 @@
 
 ### Rules:
 
-- For multivariate forecasting algorithms, we consider 25 datasets and 2 error metrics, i.e., MAE and MSE. For each dataset, we consider 4 forecasting horizons. This gives 200 (25 * 4 * 2) unique evaluation settings ([click here](../200seetings) for details), [click here](./#Multivariate-forecasting-results) to see the detailed results, [click here](./MTSF_RESULTS.csv) to download detailed evaluation results for each of the 25 multivariate time series.
+- For each anomaly detection algorithm, we count the number of times that the algorithm receives the gold, silver, and bronze medals, i.e., having the lowest, 2nd lowest, and 3rd lowest errors, shown as 🥇, 🥈, and 🥉, respectively.
 
-- For each forecasting algorithm, we count the number of times that the algorithm receives the gold, silver, and bronze medals, i.e., having the lowest, 2nd lowest, and 3rd lowest errors, shown as 🥇, 🥈, and 🥉, respectively.
-
-- We provide three different types of scores for ranking the forecasting algorithms. First, the scores equal to the numbers of gold medals. Second, the scores are the sum of the numbers of gold, silver, and bronze medals. Third, the scores are the weighted sum of the gold, silver, and bronze medals, where the weights can be customized. The larger the score, the higher the ranking.
-- Profile1 refers to a subset of ten datasets commonly used in recent literature, including Electricity, ETTm1, ETTm2, ETTh1, ETTh2, Traffic, Solar, Weather, ILI, and Exchange.
-
-<div style="height:30px"></div>
-
-<!-- ### Multivariate forecasting results -->
-
-<div style="height:10px"></div>
+- We provide three different types of scores for ranking the anomaly detection algorithms. First, the scores equal to the numbers of gold medals. Second, the scores are the sum of the numbers of gold, silver, and bronze medals. Third, the scores are the weighted sum of the gold, silver, and bronze medals, where the weights can be customized. The larger the score, the higher the ranking.
 
 <style>
   .sticky-col {
@@ -522,17 +513,6 @@
     box-shadow: 2px 0 3px -2px rgba(0, 0, 0, 0.4); /* 右侧阴影 */
   }
 </style>
-
-<div class="main-container">
-  <div style="width:100%;overflow-y:auto;height:800px" class="table-container">
-    <table id="multivariateTable211" class="my-table2">
-      <thead>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
-  </div>
-</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 <script src='./modelMetricsDashboard.js'></script>

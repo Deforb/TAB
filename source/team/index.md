@@ -2,7 +2,7 @@
 
 <!-- 1. [Overview](#Overview) -->
 
-The core development team can be reached at  [xfqiu@stu.ecnu.edu.cn](mailto:xfqiu@stu.ecnu.edu.cn).
+The core development team can be reached at [xfqiu@stu.ecnu.edu.cn](mailto:xfqiu@stu.ecnu.edu.cn).
 
 <style>
 .container {
@@ -22,51 +22,50 @@ The core development team can be reached at  [xfqiu@stu.ecnu.edu.cn](mailto:xfqi
 }
 </style>
 
-------
+---
 
 <div class="container">
-    <div class="column">
-        <a href="https://qiu69.github.io/" class="row" >Xiangfei Qiu</a>
-        <div class="row">East China Normal University </div>
-    </div>
-    <div class="column">
-         <a  style="color: black;" class="row" >Xingjian Wu</a>
-        <div class="row">East China Normal University </div>
-    </div>
-    <div class="column">
-        <a  style="color: black;" class="row" >Hanyin Cheng</a>
-        <div class="row">East China Normal University </div>
-    </div>
-    <div class="column">
-        <a  style="color: black;" class="row" >Zhengyu Li</a>
-        <div class="row">East China Normal University </div>
-    </div>
+  <div class="column">
+    <!-- <a href="https://qiu69.github.io/" class="row" >Xiangfei Qiu</a> -->
+    <a style="color: black" class="row">Xiangfei Qiu</a>
+    <div class="row">East China Normal University</div>
+  </div>
+  <div class="column">
+    <a style="color: black" class="row">Xingjian Wu</a>
+    <div class="row">East China Normal University</div>
+  </div>
+  <div class="column">
+    <a style="color: black" class="row">Hanyin Cheng</a>
+    <div class="row">East China Normal University</div>
+  </div>
+  <div class="column">
+    <a style="color: black" class="row">Zhengyu Li</a>
+    <div class="row">East China Normal University</div>
+  </div>
 </div>
 
-
-------
+---
 
 <div class="container">
-<div class="column">
-        <a  style="color: black;" class="row" >Wanghui Qiu</a>
-        <div class="row">East China Normal University </div>
-    </div>
-    <div class="column">
-        <a  style="color: black;" class="row" >Buang Zhang</a>
-        <div class="row">East China Normal University </div>
-    </div>
-    <div class="column">
-        <a  style="color: black;" class="row" >Lekui Zhou</a>
-        <div class="row">Huawei Cloud </div>
-    </div>
-    <div class="column">
-        <a style="color: black;" class="row" >Zhenli Sheng</a>
-        <div class="row">Huawei Cloud</div>
-    </div>
+  <div class="column">
+    <a style="color: black" class="row">Wanghui Qiu</a>
+    <div class="row">East China Normal University</div>
+  </div>
+  <div class="column">
+    <a style="color: black" class="row">Buang Zhang</a>
+    <div class="row">East China Normal University</div>
+  </div>
+  <div class="column">
+    <a style="color: black" class="row">Lekui Zhou</a>
+    <div class="row">Huawei Cloud</div>
+  </div>
+  <div class="column">
+    <a style="color: black" class="row">Zhenli Sheng</a>
+    <div class="row">Huawei Cloud</div>
+  </div>
 </div>
 
-
-------
+---
 
 <div class="container">
 <div class="column">
@@ -87,7 +86,7 @@ The core development team can be reached at  [xfqiu@stu.ecnu.edu.cn](mailto:xfqi
     </div>
 </div>
 
-------
+---
 
 <div class="container">
     <div class="column">
@@ -99,4 +98,3 @@ The core development team can be reached at  [xfqiu@stu.ecnu.edu.cn](mailto:xfqi
             <div class="row">East China Normal University</div>
     </div> -->
 </div>
-

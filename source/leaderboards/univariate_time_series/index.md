@@ -488,10 +488,23 @@
         </div>
       </div>
     </div>
-    <!-- <div style="width: 95%">
+    <div style="width: 95%">
       <hr style="border: 1px dashed #ddd" />
     </div>
-    <div id="all-full">
+    <div id='all-full'>
+      <div class='checkbox-container'>
+        <div class="all-checkbox">
+          <!-- <input type="checkbox" id="select-all" onclick="toggleSelectAll(this.checked,'full')" style="display:none"> -->
+          <label for="select-all">
+            <h3 style="white-space:nowrap">Datasets
+              <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleSelectAll(true,'full')" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleSelectAll(false,'full')" style="padding:0 3px">off</a>]</b>
+            </h3>
+          </label>
+        </div>
+      </div>
+      <div class="checkbox-container" id="dataset-container-full"></div>
+    </div>
+    <!-- <div id="all-full">
       <div class="checkbox-container">
         <div class="all-checkbox">
           <label for="select-all">
@@ -660,7 +673,6 @@
         <tr>
           <th>Rank</th>
           <th>Model</th>
-          <!-- <th>Parameters</th> -->
           <th>Score</th>
           <th>🥇</th>
           <th>🥈</th>
@@ -677,43 +689,8 @@
 
 ### Rules:
 
-- For univariate forecasting algorithms, we consider 8,068 series, and the MAE、MSE、MSMAPE metrics, thus having 24,204 (8,068 \* 3) unique evaluation settings, [click here](./#Univariate-forecasting-results) to see the detailed results, [click here](./result/UTSF_RESULTS.zip) to download detailed evaluation results for each of the 8,068 univariate time series.
-- Datasets are classified by sampling frequency into Yearly, Quarterly, Monthly, Weekly, Daily, Hourly, and Other. Their corresponding forecasting horizons are 6, 8, 18, 13, 14, 48, and 8, respectively. The look-back window is set to 1.25 times the respective forecasting horizon.
-- For each forecasting algorithm, we count the number of times that the algorithm receives the gold, silver, and bronze medals, i.e., having the lowest, 2nd lowest, and 3rd lowest errors, shown as 🥇, 🥈, and 🥉, respectively.
-- We provide three different types of scores for ranking the forecasting algorithms. First, the scores equal to the numbers of gold medals. Second, the scores are the sum of the numbers of gold, silver, and bronze medals. Third, the scores are the weighted sum of the gold, silver, and bronze medals, where the weights can be customized. The larger the score, the higher the ranking.
-
-<div style="height:30px"></div>
-
-### Univariate forecasting results
-
-<div style="height:10px"></div>
-
-#### Results classified according to characteristics
-
-<div class="main-container" id="main-container-uni1">
-    <div style="width:100%;overflow-y:auto;height:800px" class="table-container" id="table-container-uni1">
-        <table id="univariateTable" class="my-table2">
-            <thead>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
-</div>
-<div style="height:30px"></div>
-
-#### Results classified according to frequency
-
-<div class="main-container" id="main-container-uni2">
-    <div style="width:100%;overflow-y:auto;height:800px" class="table-container" id="table-container-uni2">
-        <table id="univariateTable" class="my-table2">
-            <thead>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
-</div>
+- For each anomaly detection algorithm, we count the number of times that the algorithm receives the gold, silver, and bronze medals, i.e., having the lowest, 2nd lowest, and 3rd lowest errors, shown as 🥇, 🥈, and 🥉, respectively.
+- We provide three different types of scores for ranking the anomaly detection algorithms. First, the scores equal to the numbers of gold medals. Second, the scores are the sum of the numbers of gold, silver, and bronze medals. Third, the scores are the weighted sum of the gold, silver, and bronze medals, where the weights can be customized. The larger the score, the higher the ranking.
 
 <style>
 .sticky-col{
