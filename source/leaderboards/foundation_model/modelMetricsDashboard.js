@@ -24,11 +24,11 @@ const MODEL_TYPE = {
     'DualTF',
     'LSTMED',
     'DCdetector',
+    'LSTM',
   ],
   'LLM-Based-Model': ['GPT4TS', 'UniTime'],
-  'Pre-trained-Model': ['Timer', 'UniTS', 'TinyTimeMixer', 'Moment'],
+  'Pre-trained-Model': ['Timer', 'UniTS', 'TinyTimeMixer', 'Moment', 'TTM'],
 }
-
 
 const allData = {
   uni: { method: {}, dataset: [], metric: [], result: {} },
@@ -475,30 +475,29 @@ function submitSelection(setting) {
   const rank = {}
   let selectedMethods = []
 
-  if (setting === 'zero') {
-    // Predefined methods for 'zero' setting
-    ;['TimesFM', 'Timer', 'UniTS', 'TTM', 'MOIRAI', 'ROSE'].forEach(method => {
-      rank[method] = { rank1: 0, rank2: 0, rank3: 0, score: 0 }
-    })
-  } else {
-    // If no types are selected, include all types and reset datasets
-    if (selectTypes.length === 0) {
-      selectTypes.push('Pretrain-Model', 'LLM-Based-Model', 'Specific-Model')
-      selectDatasets.length = 0
-    }
-    // Aggregate methods based on selected types
-    selectTypes.forEach(type => {
-      MODEL_TYPE[type].forEach(item => {
-        selectedMethods = selectedMethods.concat([item + '(zero)', item + '(few)', item + '(full)'])
-      })
-    })
-
-    // console.log(allData[setting])
-    // Filter methods that exist in all_data
-    selectedMethods = selectedMethods.filter(selectedMethod =>
-      allData[setting].method.hasOwnProperty(selectedMethod)
+  // If no types are selected, include all types and reset datasets
+  if (selectTypes.length === 0) {
+    selectTypes.push(
+      'Non-Learning-Model',
+      'Machine-Learning-Model',
+      'Deep-Learning-Model',
+      'LLM-Based-Model',
+      'Pre-trained-Model'
     )
+    selectDatasets.length = 0
   }
+  // Aggregate methods based on selected types
+  selectTypes.forEach(type => {
+    MODEL_TYPE[type].forEach(item => {
+      selectedMethods = selectedMethods.concat([item + '(zero)', item + '(few)', item + '(full)'])
+    })
+  })
+
+  // console.log(allData[setting])
+  // Filter methods that exist in all_data
+  selectedMethods = selectedMethods.filter(selectedMethod =>
+    allData[setting].method.hasOwnProperty(selectedMethod)
+  )
 
   // Initialize rank object for each selected method
   selectedMethods.forEach(method => {

@@ -254,7 +254,7 @@
           <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleCategory('Type','uni', true)" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleCategory('Type','uni', false)" style="padding:0 3px">off</a>]</b>
         </h3>
         <div class="checkbox-wrapper1">
-          <div class="checkbox-item">
+          <!-- <div class="checkbox-item">
             <input type="checkbox" id="Type-uni/Non-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-uni">
             <label for="Type-uni/Non-Learning-Model">Non-Learning</label>
           </div>
@@ -265,7 +265,7 @@
           <div class="checkbox-item">
             <input type="checkbox" id="Type-uni/Deep-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-uni">
             <label for="Type-uni/Deep-Learning-Model">Deep-Learning</label>
-          </div>
+          </div> -->
           <div class="checkbox-item">
             <input type="checkbox" id="Type-uni/LLM-Based-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-uni">
             <label for="Type-uni/LLM-Based-Model">LLM-Based</label>
@@ -432,7 +432,7 @@
           <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight:bold"> [<a href="javascript:void(0);" onclick="toggleCategory('Type','multi', true)" style="padding:0 3px">all</a>|<a href="javascript:void(0);" onclick="toggleCategory('Type','multi', false)" style="padding:0 3px">off</a>]</b>
         </h3>
         <div class="checkbox-wrapper1">
-          <div class="checkbox-item">
+          <!-- <div class="checkbox-item">
             <input type="checkbox" id="Type-multi/Non-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-multi">
             <label for="Type-multi/Non-Learning-Model">Non-Learning</label>
           </div>
@@ -443,7 +443,7 @@
           <div class="checkbox-item">
             <input type="checkbox" id="Type-multi/Deep-Learning-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-multi">
             <label for="Type-multi/Deep-Learning-Model">Deep-Learning</label>
-          </div>
+          </div> -->
           <div class="checkbox-item">
             <input type="checkbox" id="Type-multi/LLM-Based-Model" onchange="handleChildCheckboxChange(event)" class="checkbox-Type-multi">
             <label for="Type-multi/LLM-Based-Model">LLM-Based</label>

@@ -483,7 +483,13 @@ function submitSelection(setting) {
 
   // If no types are selected, include all types and reset datasets
   if (selectTypes.length === 0) {
-    selectTypes.push('Pretrain-Model', 'LLM-Based-Model', 'Specific-Model')
+    selectTypes.push(
+      'Non-Learning-Model',
+      'Machine-Learning-Model',
+      'Deep-Learning-Model',
+      'LLM-Based-Model',
+      'Pre-trained-Model'
+    )
     selectDatasets.length = 0
   }
   // Aggregate methods based on selected types

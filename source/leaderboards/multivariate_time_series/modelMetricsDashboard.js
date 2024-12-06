@@ -24,9 +24,10 @@ const MODEL_TYPE = {
     'DualTF',
     'LSTMED',
     'DCdetector',
+    'LSTM',
   ],
   'LLM-Based-Model': ['GPT4TS', 'UniTime'],
-  'Pre-trained-Model': ['Timer', 'UniTS', 'TinyTimeMixer', 'Moment'],
+  'Pre-trained-Model': ['Timer', 'UniTS', 'TinyTimeMixer', 'Moment', 'TTM'],
 }
 
 const allData = {
@@ -485,7 +486,13 @@ function submitSelection(setting) {
   } else {
     // If no types are selected, include all types and reset datasets
     if (selectTypes.length === 0) {
-      selectTypes.push('Pretrain-Model', 'LLM-Based-Model', 'Specific-Model')
+      selectTypes.push(
+        'Non-Learning-Model',
+        'Machine-Learning-Model',
+        'Deep-Learning-Model',
+        'LLM-Based-Model',
+        'Pre-trained-Model'
+      )
       selectDatasets.length = 0
     }
     // Aggregate methods based on selected types
