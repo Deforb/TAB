@@ -1,4 +1,4 @@
-# OpenTS Team
+# TAB Team
 
 <!-- 1. [Overview](#Overview) -->
 

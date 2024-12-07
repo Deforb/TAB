@@ -113,7 +113,7 @@
   }
   .checkbox-container {
     display: grid;
-    grid-template-columns: 0.7fr 0.7fr; /* 分为两列 */
+    grid-template-columns: 0.9fr 1fr; /* 分为两列 */
     padding-right: 10px; /* Add some space between checkboxes and table */
     overflow-y: auto; /* Enable vertical scroll if needed */
   }
