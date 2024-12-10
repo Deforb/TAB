@@ -113,7 +113,7 @@
   }
   .checkbox-container {
     display: grid;
-    grid-template-columns: 0.9fr 1fr; /* 分为两列 */
+    grid-template-columns: 0.6fr 0.8fr; /* 分为两列 */
     padding-right: 10px; /* Add some space between checkboxes and table */
     overflow-y: auto; /* Enable vertical scroll if needed */
   }
@@ -143,9 +143,9 @@
   }
   .checkbox-wrapper-metrics{
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 设置为两列 */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 设置为两列 */
     gap: 0;
-    width: 250px; /* 根据需要调整宽度 */
+    width: 300px; /* 根据需要调整宽度 */
   }
   .checkbox-wrapper1 {
     display: grid;
