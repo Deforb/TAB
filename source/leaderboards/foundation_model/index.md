@@ -247,7 +247,7 @@
 <div class="main-container" id="main-container-uni">
   <div class="checkbox-wrapper">
     <div class="checkbox-container" id="dataset-container-mul-type-uni">
-      <div class="category" style="margin-bottom:0px;width: 256px;">
+      <div class="category" style="margin-bottom:0px;width: 300px;">
         <h3>
           <input type="checkbox" id="select-all-type-uni" style='display:none' onchange="toggleCategory('Type','uni', this.checked)">
           Learning Paradigm

@@ -247,7 +247,7 @@
 <div class="main-container" id="main-container-full">
   <div class="checkbox-wrapper">
     <div class="checkbox-container" id="dataset-container-mul-type-full">
-      <div class="category" style="margin-bottom: 0px; width: 256px">
+      <div class="category" style="margin-bottom: 0px; width: 300px">
         <h3>
           Learning Paradigm
           <b style="font: 16px 'Microsoft YaHei', Verdana, sans-serif; font-weight: bold"
