@@ -134,7 +134,7 @@
   }
   .article-entry h3 {
     margin: 0;
-    margin-right: 6px;
+    /* margin-right: 6px; */
   }
   .all-checkbox {
     display: flex;
@@ -451,7 +451,7 @@
 <div class="main-container" id="main-container-multi">
   <div class="checkbox-wrapper">
     <div class="checkbox-container" id="dataset-container-mul-type-multi">
-      <div class="category" style="margin-bottom:0px;width: 256px;">
+      <div class="category" style="margin-bottom:0px;width: 300px;">
         <h3>
           <input type="checkbox" id="select-all-type-multi" style='display:none' onchange="toggleCategory('Type','multi', this.checked)">
           Learning Paradigm
