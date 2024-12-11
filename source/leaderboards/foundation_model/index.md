@@ -120,6 +120,7 @@
   .category h3 {
     display: flex;
     align-items: center;
+    white-space: nowrap; /* Prevent text from wrapping */
   }
 
   .category {

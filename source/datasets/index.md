@@ -107,7 +107,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
   </thead>
   <tbody>
     <tr>
-      <td>MSL [29]</td>
+      <td>MSL</td>
       <td>Spacecraft</td>
       <td>55</td>
       <td>5.88</td>
@@ -116,7 +116,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>PSM [1]</td>
+      <td>PSM</td>
       <td>Server Machine</td>
       <td>25</td>
       <td>11.07</td>
@@ -125,7 +125,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>SMAP [29]</td>
+      <td>SMAP</td>
       <td>1,Spacecraft</td>
       <td>25</td>
       <td>9.72</td>
@@ -134,7 +134,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>SMD [72]</td>
+      <td>SMD</td>
       <td>Server Machine</td>
       <td>38</td>
       <td>2.08</td>
@@ -143,7 +143,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>SWAT [51]</td>
+      <td>SWAT</td>
       <td>Water treatment</td>
       <td>51</td>
       <td>5.78</td>
@@ -152,7 +152,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>SWAN [4]</td>
+      <td>SWAN</td>
       <td>Space Weather</td>
       <td>38</td>
       <td>23.8</td>
@@ -161,7 +161,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>Creditcard [12]</td>
+      <td>Creditcard</td>
       <td>Finance</td>
       <td>29</td>
       <td>0.17</td>
@@ -170,7 +170,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>GECCO [53]</td>
+      <td>GECCO</td>
       <td>Water treatment</td>
       <td>9</td>
       <td>1.25</td>
@@ -179,7 +179,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>CICIDS [68]</td>
+      <td>CICIDS</td>
       <td>Web</td>
       <td>72</td>
       <td>1.28</td>
@@ -188,7 +188,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>CalIt2 [5]</td>
+      <td>CalIt2</td>
       <td>Visitors flowrate</td>
       <td>2</td>
       <td>4.09</td>
@@ -197,7 +197,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>Genesis [76]</td>
+      <td>Genesis</td>
       <td>Machinery</td>
       <td>18</td>
       <td>0.31</td>
@@ -206,7 +206,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>Daphnet [5]</td>
+      <td>Daphnet</td>
       <td>Movement</td>
       <td>9</td>
       <td>5.75</td>
@@ -215,7 +215,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>7</td>
     </tr>
     <tr>
-      <td>SKAB [32]</td>
+      <td>SKAB</td>
       <td>Machinery</td>
       <td>8</td>
       <td>3.65</td>
@@ -224,7 +224,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>34</td>
     </tr>
     <tr>
-      <td>NYC [11]</td>
+      <td>NYC</td>
       <td>Transport</td>
       <td>3</td>
       <td>0.57</td>
@@ -233,7 +233,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>Exathlon [31]</td>
+      <td>Exathlon</td>
       <td>Application Server</td>
       <td>multi</td>
       <td>8.71</td>
@@ -242,7 +242,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>3</td>
     </tr>
     <tr>
-      <td>ASD [41]</td>
+      <td>ASD</td>
       <td>Application Server</td>
       <td>19</td>
       <td>1.55</td>
@@ -251,7 +251,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>12</td>
     </tr>
     <tr>
-      <td>PUMP [18]</td>
+      <td>PUMP</td>
       <td>Water treatment</td>
       <td>44</td>
       <td>6.54</td>
@@ -260,7 +260,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
       <td>1</td>
     </tr>
     <tr>
-      <td>TODS [37]</td>
+      <td>TODS</td>
       <td>Synthetic</td>
       <td>5</td>
       <td>6.35</td>
@@ -280,7 +280,7 @@ Table 2 lists statistics of the 18 public multivariate time series datasets from
 
 ## Univariate time series
 
-Table 3 summarizes statistical information of the univariate datasets. The first seven datasets (split by horizontal line) are the most commonly used and are proposed for univariate time series originally. The remaining nine datasets are transformed from multivariate time series, which is consistent with TAB-UAD [58 ]. Specifically, for multivariate time series, we treat it as multiple univariate time series. We then run the AD method on each univariate time series separately and retain those univariate series where at least one method achieves AUC-ROC > 0.85. To ensure data quality, we proceed to filter according to the following two rules: 1) have no anomaly; 2) have anomaly ratio > 10% [66 ], resulting in a total of 1,671 time series. Although NAB, Yahoo are blamed to be too trivial, we still believe they are valuable since a good method should perform well on both challenging and trivial datasets.
+Table 3 summarizes statistical information of the univariate datasets. The first seven datasets (split by horizontal line) are the most commonly used and are proposed for univariate time series originally. The remaining nine datasets are transformed from multivariate time series, which is consistent with TAB-UAD. Specifically, for multivariate time series, we treat it as multiple univariate time series. We then run the AD method on each univariate time series separately and retain those univariate series where at least one method achieves AUC-ROC > 0.85. To ensure data quality, we proceed to filter according to the following two rules: 1) have no anomaly; 2) have anomaly ratio > 10%, resulting in a total of 1,671 time series. Although NAB, Yahoo are blamed to be too trivial, we still believe they are valuable since a good method should perform well on both challenging and trivial datasets.
 
 <style>
   /* 基本表格样式 */

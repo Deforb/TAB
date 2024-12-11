@@ -118,6 +118,7 @@
   .category h3 {
     display: flex;
     align-items: center;
+    white-space: nowrap; /* Prevent text from wrapping */
   }
 
   .category {
@@ -242,7 +243,7 @@
   }
 </style>
 
-## Leaderboard for multivariate time series forecasting
+## Leaderboard for multivariate time series anomaly detection
 
 <div class="main-container" id="main-container-full">
   <div class="checkbox-wrapper">
