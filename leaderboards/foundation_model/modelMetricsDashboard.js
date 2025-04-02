@@ -1,36 +1,13 @@
 const MODEL_TYPE = {
-  "LLM-Based-Model": [
-    "GPT4TS (few)",
-    "GPT4TS (full)",
-    "UniTime (few)",
-    "UniTime (full)",
-    "CALF (few)",
-    "CALF (full)",
-    "LLMMixer (few)",
-    "LLMMixer (full)",
-  ],
+  "LLM-Based-Model": ["GPT4TS", "UniTime", "CALF", "LLMMixer"],
   "Pre-trained-Model": [
-    "Timer (few)",
-    "Timer (full)",
-    "Timer (zero)",
-    "TTM (few)",
-    "TTM (full)",
-    "TTM (zero)",
-    "TimesFM (few)",
-    "TimesFM (full)",
-    "TimesFM (zero)",
-    "UniTS (few)",
-    "UniTS (full)",
-    "UniTS (zero)",
-    "Moment (few)",
-    "Moment (full)",
-    "Moment (zero)",
-    "Dada (few)",
-    "Dada (full)",
-    "Dada (zero)",
-    "Chronos (few)",
-    "Chronos (full)",
-    "Chronos (zero)",
+    "Timer",
+    "TTM",
+    "TimesFM",
+    "UniTS",
+    "Moment",
+    "Dada",
+    "Chronos",
   ],
 };
 
@@ -461,13 +438,14 @@ function toggleSelectAll(selectAllCheckbox, setting) {
  * @param {string} setting - The setting identifier used to select the related checkboxes.
  */
 function updateParentCheckbox(category, setting) {
-  if (category.includes("Type")) return;
+  const selectAllCheckbox = document.getElementById(
+    `select-all-${category}-${setting}`
+  );
+
+  if (!selectAllCheckbox) return;
 
   const checkboxes = document.querySelectorAll(
     `.checkbox-${category}-${setting}`
-  );
-  const selectAllCheckbox = document.getElementById(
-    `select-all-${category}-${setting}`
   );
 
   for (const checkbox of checkboxes) {
@@ -515,17 +493,31 @@ function submitSelection(setting) {
   const rank = {};
   let selectedMethods = [];
 
-  // If no types are selected, include all types and reset datasets
+  // If no types are selected, include all types and set datasets = 0  to show all methods
   if (selectTypes.length === 0) {
     selectTypes.push("LLM-Based-Model", "Pre-trained-Model");
     selectDatasets.length = 0;
-  }
-  // Aggregate methods based on selected types
-  selectTypes.forEach((type) => {
-    selectedMethods = selectedMethods.concat(MODEL_TYPE[type]);
-  });
+  } else {
+    // Aggregate methods based on selected types
+    selectTypes.forEach((type) => {
+      // 获取当前类型的所有模型
+      const models = MODEL_TYPE[type] || [];
 
-  // console.log(allData[setting])
+      // LLM 没有 zero-shot
+      let strategies = [...selectStrategies];
+      if (type === "LLM-Based-Model" && strategies.includes("zero")) {
+        strategies = strategies.filter((strategy) => strategy !== "zero");
+      }
+
+      // 为每个模型添加所有适用的策略
+      models.forEach((model) => {
+        strategies.forEach((strategy) => {
+          selectedMethods.push(`${model} (${strategy})`);
+        });
+      });
+    });
+  }
+
   // Filter methods that exist in all_data
   selectedMethods = selectedMethods.filter((selectedMethod) =>
     allData[setting].method.hasOwnProperty(selectedMethod)

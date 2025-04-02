@@ -187,10 +187,12 @@ function phraseInputTable(input, setting) {
   // Phrase result
   for (let i = 8; i < input.length; i++) {
     const entry = input[i];
-    //不知道为啥要交换
+    // 神秘的交换仪式
     [entry["SAND"], entry["SARIMA"]] = [entry["SARIMA"], entry["SAND"]];
     [entry["S2G"], entry["ARIMA"]] = [entry["ARIMA"], entry["S2G"]];
-    
+    [entry["SAND"], entry["iTrans"]] = [entry["iTrans"], entry["SAND"]];
+    [entry["S2G"], entry["iTrans"]] = [entry["iTrans"], entry["S2G"]];
+
     const key = entry["Dataset-Quantity-metrics"];
     if (!key) continue;
 
@@ -521,7 +523,7 @@ function submitSelection(setting) {
   const selectTypes = [];
   const selectMetrics = [];
   // const selectHorizons = []
-  const selectDatasets = allData[setting].dataset;
+  const selectDatasets = [];
   let selectScore = null;
 
   // 遍历每个 checkbox 并根据其ID进行分类
@@ -536,12 +538,13 @@ function submitSelection(setting) {
         selectScore = idParts[1].split("-")[0];
         // } else if (checkbox.id.includes('Horizons')) {
         //   selectHorizons.push(idParts[1])
+      } else {
+        // dataset
+        const dataset = `${checkbox.id.split("-")[0].replace("_", " ")}/${
+          idParts[1]
+        }`;
+        selectDatasets.push(dataset);
       }
-      // else {
-      //   // dataset
-      //   const dataset = `${checkbox.id.split('-')[0].replace('_', ' ')}/${idParts[1]}`
-      //   selectDatasets.push(dataset)
-      // }
     }
   });
 
@@ -565,7 +568,6 @@ function submitSelection(setting) {
     selectedMethods = selectedMethods.concat(MODEL_TYPE[type]);
   });
 
-  // console.log(allData[setting])
   // Filter methods that exist in all_data
   selectedMethods = selectedMethods.filter((selectedMethod) =>
     allData[setting].method.hasOwnProperty(selectedMethod)
@@ -670,8 +672,7 @@ function renderLeaderboard(rowDatas, setting) {
       <td>${score}</td>
       <td>${rank1}</td>
       <td>${rank2}</td>
-      <td>${rank3}</td>
-    `;
+      <td>${rank3}</td>`;
     fragment.appendChild(row);
   });
 
