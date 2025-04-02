@@ -14,10 +14,10 @@ const MODEL_TYPE = {
   ],
   "Machine-Learning-Model": [
     "OCSVM",
-    "DeepPoint",
+    "DP",
     "KNN",
     "KMeans",
-    "Isolation Forest",
+    "IF",
     "EIF",
     "Spectral Residual",
     "LODA",
@@ -29,7 +29,7 @@ const MODEL_TYPE = {
     "iTransformer",
     "TimesNet",
     "DUET",
-    "Anomaly Transformer",
+    "ATrans",
     "PatchTST",
     "ModernTCN",
     "TranAD",
@@ -57,9 +57,9 @@ const MODEL_TYPE = {
     "Timer (few)",
     "Timer (full)",
     "Timer (zero)",
-    "TinyTimeMixer (few)",
-    "TinyTimeMixer (full)",
-    "TinyTimeMixer (zero)",
+    "TTM (few)",
+    "TTM (full)",
+    "TTM (zero)",
     "TimesFM (few)",
     "TimesFM (full)",
     "TimesFM (zero)",
@@ -69,9 +69,9 @@ const MODEL_TYPE = {
     "Moment (few)",
     "Moment (full)",
     "Moment (zero)",
-    "DADA (few)",
-    "DADA (full)",
-    "DADA (zero)",
+    "Dada (few)",
+    "Dada (full)",
+    "Dada (zero)",
     "Chronos (few)",
     "Chronos (full)",
     "Chronos (zero)",
@@ -666,10 +666,10 @@ function renderLeaderboard(rowDatas, setting) {
       <td>${rank1}</td>
       <td>${rank2}</td>
       <td>${rank3}</td>
-      <td><a href="${paper_url}" target="_blank">paper</a></td>
-      <td>${publication} [<a href="${bib}" target="_blank">bib</a>]</td>
-      <td>${year}</td>
     `;
+    // <td><a href="${paper_url}" target="_blank">paper</a></td>
+    // <td>${publication} [<a href="${bib}" target="_blank">bib</a>]</td>
+    // <td>${year}</td>
     fragment.appendChild(row);
   });
 
