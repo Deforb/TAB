@@ -187,6 +187,10 @@ function phraseInputTable(input, setting) {
   // Phrase result
   for (let i = 8; i < input.length; i++) {
     const entry = input[i];
+    //不知道为啥要交换
+    [entry["SAND"], entry["SARIMA"]] = [entry["SARIMA"], entry["SAND"]];
+    [entry["S2G"], entry["ARIMA"]] = [entry["ARIMA"], entry["S2G"]];
+    
     const key = entry["Dataset-Quantity-metrics"];
     if (!key) continue;
 

@@ -18,8 +18,8 @@
 <meta property="og:site_name" content="TAB - A Comprehensive and Fair Benchmark for Time Series Analytics">
 <meta property="og:description" content="Get StartedYou can find our official code here: TAB github Table of Contents   Quickstart Contact  QuickstartInstallationFollow the steps below to configure the TAB environment. 1. Install GitSome mod">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-03-29T15:44:34.996Z">
-<meta property="article:modified_time" content="2024-12-02T08:01:55.152Z">
+<meta property="article:published_time" content="2025-04-02T04:42:30.804Z">
+<meta property="article:modified_time" content="2025-04-02T04:42:30.804Z">
 <meta property="article:author" content="DecisionIntelligence |">
 <meta name="twitter:card" content="summary">
   
@@ -208,7 +208,7 @@
     
     <div class="article-meta">
       <!--<a href="/TAB/get%20started/index.html" class="article-date">
-  <time datetime="2025-03-29T15:44:34.996Z" itemprop="datePublished">2025-03-29</time>
+  <time datetime="2025-04-02T04:42:30.804Z" itemprop="datePublished">2025-04-02</time>
 </a>-->
       <!-- 
 --><!-- by blair 160724 -->
@@ -231,23 +231,26 @@
 </ol>
 <h2 id="Quickstart"><a href="#Quickstart" class="headerlink" title="Quickstart"></a>Quickstart</h2><h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><p>Follow the steps below to configure the TAB environment.</p>
 <h4 id="1-Install-Git"><a href="#1-Install-Git" class="headerlink" title="1. Install Git"></a>1. Install Git</h4><p>Some models require Git to run. Please ensure that Git is installed on your system. If not, you can install it using the following command:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-Download-and-Extract-Environment"><a href="#2-Download-and-Extract-Environment" class="headerlink" title="2. Download and Extract Environment"></a>2. Download and Extract Environment</h4><p>Download the environment from <a target="_blank" rel="noopener" href="https://1drv.ms/u/c/801ce36c4ff3f93b/Eapc8wI7tqxOqmOPZ66uMG4BgeX8j7AewKq7NekCI0Al2w?e=NdenlL">OneDrive</a>. (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under <code>conda/envs/</code>) and extract the environment into this directory:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git</span><br></pre></td></tr></table></figure>
+<h4 id="2-Download-and-Extract-Environment"><a href="#2-Download-and-Extract-Environment" class="headerlink" title="2. Download and Extract Environment"></a>2. Download and Extract Environment</h4><p>Download the environment from <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1HpvlzGWw1T8cxGR1vT081kzKYGZFpvWK/view?usp=sharing">Google Drive</a>. (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under <code>conda/envs/</code>) and extract the environment into this directory:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p my_env</span><br><span class="line">tar -xzf TAB.tar.gz -C my_env</span><br></pre></td></tr></table></figure>
-
 <h4 id="3-Activate-the-Environment"><a href="#3-Activate-the-Environment" class="headerlink" title="3. Activate the Environment"></a>3. Activate the Environment</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source my_env/bin/activate</span><br></pre></td></tr></table></figure>
-
 <h4 id="4-Clean-Environment-Prefix"><a href="#4-Clean-Environment-Prefix" class="headerlink" title="4. Clean Environment Prefix"></a>4. Clean Environment Prefix</h4><p>You can clear the environment prefix using the following command. Now the environment is the same as one created directly with conda at this path.</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(my_env) $ conda-unpack</span><br></pre></td></tr></table></figure>
 
-<h3 id="Data-preparation"><a href="#Data-preparation" class="headerlink" title="Data preparation"></a>Data preparation</h3><p>Prepare Data. You can obtained the well pre-processed datasets from <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1oHDHKCGMT_xkHhCI113bQ-4IzGnKPU3I/view?usp=drive_link">Google Drive</a>. Then place the downloaded data under the folder <code>./dataset</code>.</p>
-<h3 id="Train-and-evaluate-model"><a href="#Train-and-evaluate-model" class="headerlink" title="Train and evaluate model"></a>Train and evaluate model</h3><p>We provide the experiment scripts for all benchmarks under the folder <code>./scripts/multivariate_detection</code>, and <code>./scripts/univariate_detection</code>. For example you can reproduce a experiment result as the following:</p>
+<h3 id="Data-preparation"><a href="#Data-preparation" class="headerlink" title="Data preparation"></a>Data preparation</h3><p>Prepare Data. You can obtain the well pre-processed datasets from <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1vaFzhPpK2ALNLggISawXA9gjNiyd8nRG/view?usp=sharing">Google Drive</a>. Then place the downloaded data under the folder <code>./dataset</code>. </p>
+<h3 id="Checkpoints-preparation"><a href="#Checkpoints-preparation" class="headerlink" title="Checkpoints preparation"></a>Checkpoints preparation</h3><p>You can download the checkpoints from <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/14VKcv_sIPDJgSgzOxUIN80kAzqXdzhC0/view?usp=sharing">Google Drive</a>. After obtaining the files, follow the steps below to organize them:</p>
+<ol>
+<li>For LLM-based models, move the files from <code>checkpoints/llm_checkpoints</code> to the folder <code>ts_benchmark/baselines/LLM/checkpoints</code>.</li>
+<li>For pre-train models (UniTS, Timer and TimesFM), move the files from <code>checkpoints/pre_train_checkpoints</code> to the folder <code>ts_benchmark/baselines/pre_train/checkpoints</code>. And the other models’ checkpoints can be obtained from Huggingface by the code.</li>
+</ol>
+<p>Ensure the files are placed in the correct directories for proper functionality.</p>
+<h3 id="Train-and-evaluate-model"><a href="#Train-and-evaluate-model" class="headerlink" title="Train and evaluate model"></a>Train and evaluate model</h3><p>We provide the experiment scripts for all benchmarks under the folder <code>./scripts/multivariate_detection</code>, and <code>./scripts/univariate_detection</code>. For example, you can reproduce an experiment result as the following:</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh ./scripts/multivariate_detection/detect_label/MSL_script/ModernTCN.sh</span><br></pre></td></tr></table></figure>
 
 <h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><p>If you have any questions or suggestions, feel free to contact:</p>
 <ul>
-<li>Xiangfei Qiu (<a href="mailto:&#120;&#102;&#113;&#x69;&#x75;&#64;&#x73;&#116;&#117;&#46;&#101;&#99;&#110;&#x75;&#46;&#x65;&#x64;&#117;&#46;&#99;&#110;">&#120;&#102;&#113;&#x69;&#x75;&#64;&#x73;&#116;&#117;&#46;&#101;&#99;&#110;&#x75;&#46;&#x65;&#x64;&#117;&#46;&#99;&#110;</a>)</li>
+<li>Xiangfei Qiu (<a href="mailto:&#120;&#102;&#x71;&#105;&#117;&#64;&#115;&#x74;&#117;&#x2e;&#101;&#x63;&#110;&#117;&#46;&#x65;&#x64;&#117;&#46;&#x63;&#110;">&#120;&#102;&#x71;&#105;&#117;&#64;&#115;&#x74;&#117;&#x2e;&#101;&#x63;&#110;&#117;&#46;&#x65;&#x64;&#117;&#46;&#x63;&#110;</a>)</li>
 </ul>
 <!-- ### Configure your Configuration File
 
